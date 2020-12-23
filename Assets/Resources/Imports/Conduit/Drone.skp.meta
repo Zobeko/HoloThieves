@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: a823a74453e30bb4fbf701830680ec19
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 80acbd9892bb40b6f13ae383a96f3b9a
+  longitude: 2.183
+  latitude: 41.383
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 14.022797, y: 5.410582, z: -0.7494877}
+      lookAt: {x: 8.807898, y: -1.0306402, z: 13.187517}
+      up: {x: -0.13921152, y: 0.9177149, z: 0.37204775}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: 6.685865, y: 8.004335, z: -1.231666}
+        lookAt: {x: 11.837002, y: -2.323419, z: 18.396149}
+        up: {x: 0.11513861, y: 0.89121586, z: 0.4387225}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena1
+    - camera:
+        position: {x: 21.663847, y: -13.107938, z: 14.610792}
+        lookAt: {x: 8.46987, y: 5.4435234, z: 14.152468}
+        up: {x: 0.8142612, y: 0.57980925, z: 0.028285278}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena2
+    - camera:
+        position: {x: 13.772611, y: 4.072009, z: -1.7246829}
+        lookAt: {x: 7.18736, y: -1.6369551, z: 19.310764}
+        up: {x: -0.0749072, y: 0.96805733, z: 0.23927812}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena3
+    - camera:
+        position: {x: -3.9481232, y: 12.208957, z: 12.8184185}
+        lookAt: {x: 9.459416, y: -0.015699437, z: 14.692493}
+        up: {x: 0.6637398, y: 0.74218744, z: 0.092776015}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena4
+    - camera:
+        position: {x: 24.027746, y: -11.473705, z: 17.026152}
+        lookAt: {x: 11.543159, y: 1.9495591, z: 14.231094}
+        up: {x: 0.7063932, y: 0.689926, z: 0.1581478}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena5
+    - camera:
+        position: {x: 15.719248, y: -2.9123545, z: 29.873913}
+        lookAt: {x: 8.638751, y: 3.3267577, z: 13.911414}
+        up: {x: 0.13642424, y: 0.94169843, z: 0.3075591}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena6
+    - camera:
+        position: {x: 15.385597, y: 3.7704866, z: 29.906723}
+        lookAt: {x: 7.824831, y: -1.0787138, z: 13.683856}
+        up: {x: -0.110467434, y: 0.9652024, z: -0.23702602}
+        fov: 35
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Escena7
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aspa
+    100002: aspa 1
+    100004: aspa 2
+    100006: aspa 3
+    100008: camara
+    100010: //RootNode
+    100012: Group 2
+    100014: helice
+    100016: helice 1
+    100018: helice 2
+    100020: helice 3
+    100022: rotor
+    100024: rotor 1
+    100026: rotor 2
+    100028: rotor 3
+    400000: aspa
+    400002: aspa 1
+    400004: aspa 2
+    400006: aspa 3
+    400008: camara
+    400010: //RootNode
+    400012: Group 2
+    400014: helice
+    400016: helice 1
+    400018: helice 2
+    400020: helice 3
+    400022: rotor
+    400024: rotor 1
+    400026: rotor 2
+    400028: rotor 3
+    2100000: _defaultMat
+    2100002: _3
+    2100004: _6
+    2100006: _1
+    2100008: foto8
+    2100010: _5
+    2100012: _2
+    2100014: _7
+    2100016: Lisanne_Bandana
+    2300000: aspa
+    2300002: aspa 1
+    2300004: aspa 2
+    2300006: aspa 3
+    2300008: camara
+    2300010: //RootNode
+    2300012: helice
+    2300014: helice 1
+    2300016: helice 2
+    2300018: helice 3
+    2300020: rotor
+    2300022: rotor 1
+    2300024: rotor 2
+    2300026: rotor 3
+    3300000: aspa
+    3300002: aspa 1
+    3300004: aspa 2
+    3300006: aspa 3
+    3300008: camara
+    3300010: //RootNode
+    3300012: helice
+    3300014: helice 1
+    3300016: helice 2
+    3300018: helice 3
+    3300020: rotor
+    3300022: rotor 1
+    3300024: rotor 2
+    3300026: rotor 3
+    4300000: Mesh Drone
+    4300002: Mesh aspa
+    4300004: Mesh rotor
+    4300006: Mesh helice
+    4300008: Mesh camara
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
