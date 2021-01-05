@@ -17,9 +17,11 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     //Tableau contenant tous les HoloGameObject des points de changement de direction pour le drone 
     [Serialized] private readonly HoloGameObject[] checkPoints;
     //Tableau contenant tous les HoloTransform des points de changement de direction pour le drone 
-    [Serialized] private readonly HoloTransform[] checkPointsTransform;
+    //[Serialized] private readonly HoloTransform[] checkPointsTransform;
+
     //HoloGameObject du point de départ du drone dans le conduit
-    [Serialized] private readonly HoloGameObject startPoint;
+    //[Serialized] private readonly HoloGameObject startPoint;
+
     //AudioSource sur le drone permettant de jouer le son de victoire à la fin du labyrinthe/conduit
     [SharedAudioComponent] private readonly SharedAudioComponent victorySoundAudioSource;
 
@@ -37,20 +39,28 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     //Durée du delay avant la disparition du conduit (et apparition IDServeur)
     [Serialized] private readonly float delayBeforeVentDisseppearance;
 
+    private int n = 0;
+
+    
+    [Serialized] private HoloGameObject checkPoint1;
+    [Serialized] private HoloGameObject checkPoint2;
 
     public override void Start()
     {
-        
+        Log("Start DroneMovement");
+        Log("n start = " + n.ToString());
         Async.OnUpdate += Update;
 
-        currentCheckPoint = startPoint;
+        currentCheckPoint = checkPoints[0];
     }
 
     public void Update()
     {
+        Log("Update DroneMovement");
         //Si le labyrinthe/conduit est affiché 
         if (vent.activeSelf)
         {
+            Log("if(vent.activeSelf)");
             //Gestion des changement de currentCheckPoint lorsque le drone est assez proche d'un checkPoint[i]
             CheckPointSubstitution();
 
@@ -71,31 +81,36 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     public void DroneMovement()
     {
         speed = new HoloVector3(0, 0, 0);
-
+        
 
         //xPos
-        if((currentCheckPoint == startPoint) || (currentCheckPoint == checkPoints[1]) || (currentCheckPoint == checkPoints[3]) || (currentCheckPoint == checkPoints[9]))
+        if((n == 0) || (n==2) || (n==4) || (n==10))
         {
+            Log("X Positive");
             speed.x = 1f;
         }
         //xNeg
-        if((currentCheckPoint == checkPoints[5]) || (currentCheckPoint == checkPoints[7]))
+        else if((n==6) || (n == 8))
         {
+            Log("X Negative");
             speed.x = -1f;
         }
         //zPos
-        if ((currentCheckPoint == checkPoints[0]) || (currentCheckPoint == checkPoints[6]))
+        else if ((n == 1) || (n == 7))
         {
+           Log("Y Positive");
             speed.z = 1f;
         }
         //zNeg
-        if ((currentCheckPoint == checkPoints[2]) || (currentCheckPoint == checkPoints[4]) || (currentCheckPoint == checkPoints[8]) || (currentCheckPoint == checkPoints[10])) 
+        else if ((n == 3) || (n == 5) || (n == 9) || (n == 11)) 
         {
+            Log("Y Negative");
             speed.z = -1f;
         }
         //FinishPoint
-        if(currentCheckPoint == checkPoints[11])
+        else if (n == 12)
         {
+            Log("Finish");
             //Si on est à la fin du labyrinthe, on rend le drone immobile 
             speed = new HoloVector3(0, 0, 0);
             //Si c'est la première fois qu'on finit le labyrinthe (évite que ces actions puissent être répétées plusieurs fois
@@ -110,7 +125,7 @@ public class DroneMovementBehaviour2 : HoloBehaviour
             
             //On incrémente le timer 
             tempsAvantDisparition++;
-            Log((tempsAvantDisparition / 60f).ToString());
+            //Log((tempsAvantDisparition / 60f).ToString());
         }
 
         //On déplace le drone 
@@ -120,15 +135,36 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     public void CheckPointSubstitution()
     {
         //On teste sur tous les checkPoints 
-        for (int i = 0; i < checkPoints.Length; i++)
+
+        //Si le drone est à moins de 1m d'un checkPoint
+        if (n < 12)
         {
-            //Si le drone est à moins de 1m d'un checkPoint
-            if (HoloVector3.Distance(transform.position, checkPointsTransform[i].position) < detectionDistance)
+            Log("n = " + n.ToString());
+            if ((HoloVector3.Distance(transform.position, checkPoints[n + 1].transform.position) < detectionDistance))
             {
+                Log("Transform");
                 //Ce checkPoint devient le currentCheckPoint
-                currentCheckPoint = checkPoints[i];
+                //currentCheckPoint = checkPoints[n + 1];
+                n++;
             }
+
+            
+            /*if ((HoloVector3.Distance(transform.position, checkPoint1.transform.position) < detectionDistance))
+            {
+
+                //Ce checkPoint devient le currentCheckPoint
+                //currentCheckPoint = checkPoints[n + 1];
+                n = 1;
+            }
+            if ((HoloVector3.Distance(transform.position, checkPoint2.transform.position) < detectionDistance))
+            {
+
+                //Ce checkPoint devient le currentCheckPoint
+                //currentCheckPoint = checkPoints[n + 1];
+                n = 2;
+            }*/
         }
+        
 
 
     }

@@ -5,7 +5,7 @@
 public class BeginVentPartBehaviour : HoloBehaviour
 {
     //Empty nommé "Conduit" qui contient tout ce qui a à voir avec le conduit d'aeration et le drone
-    [Serialized] private readonly HoloGameObject vent;
+    [Serialized] private HoloGameObject vent;
     //Texte "Drone piraté" présent sur l'interface de la wifi
     [Serialized] private readonly HoloGameObject hackedText;
     //true à partir du moment où le drone à été piraté
@@ -15,6 +15,7 @@ public class BeginVentPartBehaviour : HoloBehaviour
 
     public override void Start()
     {
+        isDroneHacked = false;
         Async.OnUpdate += Update;   
     }
 

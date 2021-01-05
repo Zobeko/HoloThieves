@@ -1,4 +1,5 @@
 ﻿using Holo;
+using System;
 
 //Script rattaché à la borne wifi (qui gère la plupart des interactions liées à la borne wifi)
 
@@ -32,6 +33,7 @@ public class WifiAreaBehaviour : HoloBehaviour
     //true lorsque le joueur est dans la zone WIFI
     public bool isInWifiArea = false;
 
+
     public override void Start()
     {
         userPositionComponent.OnUserEnter += OnUserEnter;
@@ -39,21 +41,28 @@ public class WifiAreaBehaviour : HoloBehaviour
         Async.OnUpdate += Update;
     }
 
+    
+
     public void Update()
     {
+        
+
+
         //On récupère le booleen ButtonIsTrigger qui est à truq quand on appuie sur le bouton WIFI
         isButtonTrigger = wifiAnimator.GetBoolParameter("ButtonIsTrigger");
         //Si on appuie sur le bouton WIFI & l'interface WIFI n'est pas encore activée & on est dans la zone wifi & c'est la 1ère fois quon active la WIFI
         if (isButtonTrigger && !wifiBoard.activeSelf && isInWifiArea && !isWifiActivated)
         {
+
+            
             //On incrémente le timer
             timerWifiBoard += (1 / 60f);
-            Log(timerWifiBoard.ToString());
+            //Log(timerWifiBoard.ToString());
 
             //On fait passer au vert les lumières de la borne WIFI
             if ((timerWifiBoard >= delayBeforeWifiBoardApparition*0.25))
             {
-
+                
                 greenLight1.SetActive(true);
 
             }
@@ -89,7 +98,7 @@ public class WifiAreaBehaviour : HoloBehaviour
     {
         isInWifiArea = true;
         wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
-
+        Log("IN");
         
     }
 
@@ -101,6 +110,7 @@ public class WifiAreaBehaviour : HoloBehaviour
         //On envoie isInWifiArea à l'Animator du pannel de feedback zone WIFI
         wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
         wifiBoard.SetActive(false);
+        Log("OUT");
     }
 
 

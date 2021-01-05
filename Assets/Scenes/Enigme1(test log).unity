@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 52332951}
   - component: {fileID: 52332950}
   - component: {fileID: 52332949}
+  - component: {fileID: 52332952}
   m_Layer: 0
   m_Name: Lumiere1(Rouge)
   m_TagString: Untagged
@@ -139,11 +140,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52332947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.0525}
+  m_LocalPosition: {x: 0.2367, y: 0.2415, z: 0.0525}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 2
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &52332949
 CapsuleCollider:
@@ -204,6 +205,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52332947}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &52332952
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52332947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed2b75953f19c2a488addaa461876425, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &68044648
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &68044651
 AudioSource:
@@ -467,79 +487,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &80384169
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4501034587746383721}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_Name
-      value: Partie1FBX
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.759999
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.349998
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.49999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1058a41e78732584daf90f75976e3f6f, type: 3}
---- !u!4 &80384170 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 1058a41e78732584daf90f75976e3f6f,
-    type: 3}
-  m_PrefabInstance: {fileID: 80384169}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &80384171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 1058a41e78732584daf90f75976e3f6f,
-    type: 3}
-  m_PrefabInstance: {fileID: 80384169}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &80913416
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +517,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.12}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 7
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &80913418
 CapsuleCollider:
@@ -824,8 +771,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.12}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 3
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &177241128
 CapsuleCollider:
@@ -886,6 +833,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177241126}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &213400152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 0f162103bcb51b1498586613b06cade2,
+    type: 3}
+  m_PrefabInstance: {fileID: 213786840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &213786840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -963,25 +916,13 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 922e157a4f924904b8cd11b2a6926ec7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f162103bcb51b1498586613b06cade2, type: 3}
---- !u!1 &213786841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 0f162103bcb51b1498586613b06cade2,
-    type: 3}
-  m_PrefabInstance: {fileID: 213786840}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &213786842 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 0f162103bcb51b1498586613b06cade2,
-    type: 3}
-  m_PrefabInstance: {fileID: 213786840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &213786843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213786841}
+  m_GameObject: {fileID: 213886584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
@@ -998,31 +939,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1030,17 +971,17 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventType
       serializedType: System.String
       serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
@@ -1064,27 +1005,27 @@ MonoBehaviour:
         \     \"type\": \"System.Boolean\",\r\n      \"value\": \"True\"\r\n    }\r\n
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
+        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"NULL\\\"\\r\\n}\"\r\n
         \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1101,7 +1042,7 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"target\",\r\n      \"Value\":
         {\r\n        \"type\": \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null\",\r\n        \"value\": \"{\\r\\n  \\\"unityGameObject\\\":
-        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
+        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\\\"\\r\\n}\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"Gaze\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
@@ -1122,33 +1063,33 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     components: []
   runtimeParameters:
@@ -1157,31 +1098,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1189,17 +1130,17 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventType
       serializedType: System.String
       serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
@@ -1223,27 +1164,27 @@ MonoBehaviour:
         \     \"type\": \"System.Boolean\",\r\n      \"value\": \"True\"\r\n    }\r\n
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
+        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"NULL\\\"\\r\\n}\"\r\n
         \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1281,33 +1222,33 @@ MonoBehaviour:
         \   },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     components: []
   attachedAssetId: 
@@ -1319,7 +1260,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213786841}
+  m_GameObject: {fileID: 213886584}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3bd96f10395b6744aba1cdf9db888bc9, type: 2}
@@ -1337,7 +1278,7 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213786841}
+  m_GameObject: {fileID: 213886584}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1350,7 +1291,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213786841}
+  m_GameObject: {fileID: 213886584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
@@ -1367,31 +1308,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1399,31 +1340,31 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventType
       serializedType: System.String
-      serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      serializedValue: HoloForge.ActionTriggerExtension.Event.EventTouch
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Holo.EventAttribute,
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
       serializedValue: "[\r\n  {\r\n    \"Key\": \"eventType\",\r\n    \"Value\":
-        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeEventUser,
+        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchEvent,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeEventUser,
-        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::OnTap}\"\r\n
+        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchEvent,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::OnTouchEnter}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"stateType\",\r\n    \"Value\": {\r\n
-        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeState, HSBaseBehaviours,
+        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchState, HSBaseBehaviours,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n      \"value\":
-        \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeState,
+        \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchState,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::None}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"ComponentRights\",\r\n    \"Value\":
         {\r\n      \"type\": \"Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
@@ -1433,27 +1374,31 @@ MonoBehaviour:
         \     \"type\": \"System.Boolean\",\r\n      \"value\": \"True\"\r\n    }\r\n
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
-        \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\\\"\\r\\n}\"\r\n
+        \   }\r\n  },\r\n  {\r\n    \"Key\": \"hand\",\r\n    \"Value\": {\r\n      \"type\":
+        \"Holo.Handness, HFGesturesComponent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::Holo.Handness, HFGesturesComponent,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Any}\"\r\n    }\r\n
+        \ }\r\n]"
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1470,7 +1415,7 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"target\",\r\n      \"Value\":
         {\r\n        \"type\": \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null\",\r\n        \"value\": \"{\\r\\n  \\\"unityGameObject\\\":
-        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
+        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\\\"\\r\\n}\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"Tap\"\r\n
         \     }\r\n    }\r\n  ],\r\n  [\r\n    {\r\n      \"Key\": \"action\",\r\n
@@ -1489,33 +1434,33 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     components: []
   runtimeParameters:
@@ -1524,31 +1469,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1556,31 +1501,31 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventType
       serializedType: System.String
-      serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      serializedValue: HoloForge.ActionTriggerExtension.Event.EventTouch
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Holo.EventAttribute,
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
       serializedValue: "[\r\n  {\r\n    \"Key\": \"eventType\",\r\n    \"Value\":
-        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeEventUser,
+        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchEvent,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeEventUser,
-        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::101}\"\r\n
+        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchEvent,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::1}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"stateType\",\r\n    \"Value\": {\r\n
-        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeState, HSBaseBehaviours,
+        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchState, HSBaseBehaviours,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n      \"value\":
-        \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeState,
+        \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchState,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"ComponentRights\",\r\n    \"Value\":
         {\r\n      \"type\": \"Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
@@ -1591,26 +1536,29 @@ MonoBehaviour:
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
         \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
-        \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+        \   }\r\n  },\r\n  {\r\n    \"Key\": \"hand\",\r\n    \"Value\": {\r\n      \"type\":
+        \"Holo.Handness, HFGesturesComponent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::Holo.Handness, HFGesturesComponent,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::7}\"\r\n    }\r\n  }\r\n]"
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1646,33 +1594,33 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     components: []
   attachedAssetId: 
@@ -1683,7 +1631,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213786841}
+  m_GameObject: {fileID: 213886584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
@@ -1700,31 +1648,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1732,17 +1680,17 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventType
       serializedType: System.String
       serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
@@ -1766,27 +1714,27 @@ MonoBehaviour:
         \     \"type\": \"System.Boolean\",\r\n      \"value\": \"True\"\r\n    }\r\n
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
+        \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\\\"\\r\\n}\"\r\n
         \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1803,7 +1751,7 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"target\",\r\n      \"Value\":
         {\r\n        \"type\": \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null\",\r\n        \"value\": \"{\\r\\n  \\\"unityGameObject\\\":
-        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213786841}\\\"\\r\\n}\"\r\n
+        \\\"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\\\"\\r\\n}\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"Gaze\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
@@ -1824,33 +1772,33 @@ MonoBehaviour:
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFUnityEditorSerializationMode
     components: []
   runtimeParameters:
@@ -1859,31 +1807,31 @@ MonoBehaviour:
     - name: nbStates
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: stateNameIntList
       serializedType: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1891,17 +1839,17 @@ MonoBehaviour:
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: '[]'
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventType
       serializedType: System.String
       serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventNameInt
       serializedType: System.Int32
       serializedValue: 0
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: eventParameter
       serializedType: System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
@@ -1927,25 +1875,25 @@ MonoBehaviour:
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
         \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
         \   }\r\n  }\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: nbCommands
       serializedType: System.Int32
       serializedValue: 2
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
       serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
         \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: actionParameterList
       serializedType: System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
@@ -1983,37 +1931,43 @@ MonoBehaviour:
         \   },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: andValue
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enableDebug
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: startAsDisable
       serializedType: System.Boolean
       serializedValue: False
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: target
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: NULL
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     - name: enabled
       serializedType: System.Boolean
       serializedValue: True
-      relativeToTransform: {fileID: 213786842}
+      relativeToTransform: {fileID: 213400152}
       serializationMode: HFRuntimeSerializationMode
     components: []
   attachedAssetId: 
   originIsClient: 0
+--- !u!1 &213886584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0f162103bcb51b1498586613b06cade2,
+    type: 3}
+  m_PrefabInstance: {fileID: 213786840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258198001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,7 +2087,7 @@ Transform:
   m_LocalPosition: {x: 11.1, y: 0, z: 9.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939892874}
+  m_Father: {fileID: 4501034587680966833}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &298676151
@@ -2232,19 +2186,272 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &317133838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100010, guid: a823a74453e30bb4fbf701830680ec19,
-    type: 3}
-  m_PrefabInstance: {fileID: 4501034587681362491}
+--- !u!114 &317133839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501034587681395857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviourFullName: DroneMovementBehaviour2
+  manager: {fileID: 0}
+  behaviourDefinitionRelativeFilePath: 
+  editorParametersJson: 
+  runtimeParametersJson: 
+  editorParameters:
+    behaviourName: DroneMovementBehaviour2
+    entries:
+    - name: transform
+      serializedType: Holo.HoloTransform, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::5a8b2aa157397e243a68ecf26f97517f::4501034587680966833}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: maxSpeed
+      serializedType: System.Single
+      serializedValue: 0.005
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: speed
+      serializedType: Holo.HoloVector3, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"vector\": \"{\\\"x\\\":0.0,\\\"y\\\":0.0,\\\"z\\\":0.0,\\\"magnitude\\\":0.0,\\\"sqrMagnitude\\\":0.0}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: detectionDistance
+      serializedType: System.Single
+      serializedValue: 1
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: checkPoints
+      serializedType: Holo.HoloGameObject[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "[\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588798542657}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034589031174541}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588938711965}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588449702753}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588661827698}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587166216086}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587074364043}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587469345803}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588204169771}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587786101651}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587941925767}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587593454345}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588503390154}\"\r\n
+        \ }\r\n]"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: currentCheckPoint
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: vent
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588890975622}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: IDSeveurText
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7093717619294448910}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: delayBeforeVentDisseppearance
+      serializedType: System.Single
+      serializedValue: 18
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: checkPoint1
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034589031174541}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: checkPoint2
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588938711965}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
+    components:
+    - component:
+        name: victorySoundAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::317133841}\"\r\n}"
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFUnityEditorSerializationMode
+  runtimeParameters:
+    behaviourName: DroneMovementBehaviour2
+    entries:
+    - name: transform
+      serializedType: Holo.HoloTransform, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::CURRENT_GAMEOBJECT::::UnityEngine.Transform,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: maxSpeed
+      serializedType: System.Single
+      serializedValue: 0.005
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: speed
+      serializedType: Holo.HoloVector3, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"vector\": \"{\\\"x\\\":0.0,\\\"y\\\":0.0,\\\"z\\\":0.0,\\\"magnitude\\\":0.0,\\\"sqrMagnitude\\\":0.0}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: detectionDistance
+      serializedType: System.Single
+      serializedValue: 1
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: checkPoints
+      serializedType: Holo.HoloGameObject[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "[\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/StartPoint::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint1::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint2::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint3::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint4::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint5::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint6::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint7::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint8::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint9::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint10::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint11::}\"\r\n
+        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/FinishPoint::}\"\r\n
+        \ }\r\n]"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: currentCheckPoint
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: vent
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::..::}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: IDSeveurText
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../../Wifi/IDServeur::}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: delayBeforeVentDisseppearance
+      serializedType: System.Single
+      serializedValue: 18
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: checkPoint1
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint1::}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: checkPoint2
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint2::}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    components:
+    - component:
+        name: victorySoundAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFRuntimeSerializationMode::Component::0::CURRENT_GAMEOBJECT::::UnityEngine.AudioSource,
+          UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034587680966833}
+        serializationMode: HFRuntimeSerializationMode
+  attachedAssetId: 
+  originIsClient: 0
 --- !u!82 &317133841
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317133838}
+  m_GameObject: {fileID: 4501034587681395857}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -2339,7 +2546,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1186963010}
+    m_TransformParent: {fileID: 1186563271}
     m_Modifications:
     - target: {fileID: 100000, guid: 2bb41d81cc09f2d4a8f91ef56a0382b6, type: 3}
       propertyPath: m_Name
@@ -2375,7 +2582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2bb41d81cc09f2d4a8f91ef56a0382b6, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2bb41d81cc09f2d4a8f91ef56a0382b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2666,12 +2873,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470956537}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.44999945, y: 1.37, z: -3.0200005}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: -0.44999945, y: 1.279, z: 1.1229994}
+  m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
   m_Children:
-  - {fileID: 570278799}
+  - {fileID: 1186563277}
   - {fileID: 1187789275}
-  - {fileID: 213786842}
+  - {fileID: 213400152}
   - {fileID: 1621220218}
   - {fileID: 7093717619294744878}
   m_Father: {fileID: 0}
@@ -3334,7 +3541,7 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: delayBeforeWifiBoardApparition
       serializedType: System.Single
-      serializedValue: 4
+      serializedValue: 24
       relativeToTransform: {fileID: 470956539}
       serializationMode: HFUnityEditorSerializationMode
     - name: greenLight1
@@ -3389,7 +3596,7 @@ MonoBehaviour:
         serializationMode: HFUnityEditorSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 470956539}
         serializationMode: HFUnityEditorSerializationMode
       - name: GameObject
@@ -3467,7 +3674,7 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: delayBeforeWifiBoardApparition
       serializedType: System.Single
-      serializedValue: 4
+      serializedValue: 24
       relativeToTransform: {fileID: 470956539}
       serializationMode: HFRuntimeSerializationMode
     - name: greenLight1
@@ -3526,7 +3733,7 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 470956539}
         serializationMode: HFRuntimeSerializationMode
       - name: GameObject
@@ -3556,7 +3763,7 @@ MonoBehaviour:
       - name: Animator
         serializedType: Holo.HoloAnimator, HFHoloBaseImplementation, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityAnimator\": \"{HFRuntimeSerializationMode::Component::0::../Canvas/Panel::::UnityEngine.Animator,
+        serializedValue: "{\r\n  \"unityAnimator\": \"{HFRuntimeSerializationMode::Component::0::../GameObject/Canvas/Panel::::UnityEngine.Animator,
           UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
         relativeToTransform: {fileID: 470956539}
         serializationMode: HFRuntimeSerializationMode
@@ -3688,6 +3895,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492265170}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &503564272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4501034588723955551}
+    m_Modifications:
+    - target: {fileID: 100000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_Name
+      value: Partie2bis
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.4066653
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.753332
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.4666672
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.99996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8237adc98396754e9bf26a9aa53eb5e, type: 3}
+--- !u!4 &503564273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e8237adc98396754e9bf26a9aa53eb5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 503564272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &503564274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e8237adc98396754e9bf26a9aa53eb5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 503564272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,12 +4066,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &570278799 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400012, guid: 4ab03d19c471bae4aaeffb5f3fae9f96,
-    type: 3}
-  m_PrefabInstance: {fileID: 1186963009}
+--- !u!1 &540437859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540437860}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &540437860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540437859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 670590906}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622549081
 GameObject:
   m_ObjectHideFlags: 1
@@ -3807,7 +4128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   references:
   - {fileID: 470956537}
-  - {fileID: 213786841}
+  - {fileID: 213886584}
   - {fileID: 415821202}
   - {fileID: 534669905}
   - {fileID: 670590902}
@@ -3820,7 +4141,7 @@ MonoBehaviour:
   - {fileID: 2093424173}
   - {fileID: 470956541}
   - {fileID: 7093717619294448910}
-  - {fileID: 939892874}
+  - {fileID: 4501034587680966833}
   - {fileID: 4501034589031174541}
   - {fileID: 4501034588938711965}
   - {fileID: 4501034588449702753}
@@ -3847,7 +4168,7 @@ MonoBehaviour:
   - {fileID: 4501034588503390132}
   - {fileID: 4501034588798542657}
   - {fileID: 4501034588890975622}
-  - {fileID: 317133838}
+  - {fileID: 4501034587681395857}
   - {fileID: 3151132538749989711}
   - {fileID: 317133841}
   - {fileID: 701260842}
@@ -3857,15 +4178,16 @@ MonoBehaviour:
   - {fileID: 4501034588723955548}
   - {fileID: 4501034587717113411}
   - {fileID: 4501034587329925425}
-  - {fileID: 80384171}
-  - {fileID: 1933366401}
-  - {fileID: 850067558}
-  - {fileID: 1875195833}
   - {fileID: 1076410490}
   - {fileID: 80913416}
   - {fileID: 655872653}
   - {fileID: 1006847720}
   - {fileID: 68044648}
+  - {fileID: 1189228384}
+  - {fileID: 503564274}
+  - {fileID: 1668290973}
+  - {fileID: 1153067342}
+  - {fileID: 0}
 --- !u!4 &622549083
 Transform:
   m_ObjectHideFlags: 1
@@ -3910,8 +4232,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.185}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 8
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &655872655
 CapsuleCollider:
@@ -3990,7 +4312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &670590903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,16 +4381,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670590902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -40.12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 129415961}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 540437860}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 9.79, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &701260842 stripped
@@ -4233,7 +4555,7 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: eventType
       serializedType: System.String
-      serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
+      serializedValue: HoloForge.ActionTriggerExtension.Event.EventTouch
       relativeToTransform: {fileID: 765333343}
       serializationMode: HFUnityEditorSerializationMode
     - name: eventNameInt
@@ -4246,14 +4568,14 @@ MonoBehaviour:
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Holo.EventAttribute,
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
       serializedValue: "[\r\n  {\r\n    \"Key\": \"eventType\",\r\n    \"Value\":
-        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeEventUser,
+        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchEvent,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeEventUser,
-        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::OnTap}\"\r\n
+        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchEvent,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::OnTouchEnter}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"stateType\",\r\n    \"Value\": {\r\n
-        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeState, HSBaseBehaviours,
+        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchState, HSBaseBehaviours,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n      \"value\":
-        \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeState,
+        \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchState,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::None}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"ComponentRights\",\r\n    \"Value\":
         {\r\n      \"type\": \"Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
@@ -4264,7 +4586,11 @@ MonoBehaviour:
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
         \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::765333342}\\\"\\r\\n}\"\r\n
-        \   }\r\n  }\r\n]"
+        \   }\r\n  },\r\n  {\r\n    \"Key\": \"hand\",\r\n    \"Value\": {\r\n      \"type\":
+        \"Holo.Handness, HFGesturesComponent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \     \"value\": \"{HFUnityEditorSerializationMode::ENUM::Holo.Handness, HFGesturesComponent,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Any}\"\r\n    }\r\n
+        \ }\r\n]"
       relativeToTransform: {fileID: 765333343}
       serializationMode: HFUnityEditorSerializationMode
     - name: nbCommands
@@ -4374,7 +4700,7 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: eventType
       serializedType: System.String
-      serializedValue: HoloForge.ActionTriggerExtension.Event.EventGaze
+      serializedValue: HoloForge.ActionTriggerExtension.Event.EventTouch
       relativeToTransform: {fileID: 765333343}
       serializationMode: HFRuntimeSerializationMode
     - name: eventNameInt
@@ -4387,14 +4713,14 @@ MonoBehaviour:
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Holo.EventAttribute,
         HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
       serializedValue: "[\r\n  {\r\n    \"Key\": \"eventType\",\r\n    \"Value\":
-        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeEventUser,
+        {\r\n      \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchEvent,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
-        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeEventUser,
-        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::101}\"\r\n
+        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchEvent,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::1}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"stateType\",\r\n    \"Value\": {\r\n
-        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.GazeState, HSBaseBehaviours,
+        \     \"type\": \"HoloForge.ActionTriggerExtension.Event.TouchState, HSBaseBehaviours,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n      \"value\":
-        \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.GazeState,
+        \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Event.TouchState,
         HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
         \   }\r\n  },\r\n  {\r\n    \"Key\": \"ComponentRights\",\r\n    \"Value\":
         {\r\n      \"type\": \"Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
@@ -4405,7 +4731,10 @@ MonoBehaviour:
         \ },\r\n  {\r\n    \"Key\": \"GameObject\",\r\n    \"Value\": {\r\n      \"type\":
         \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
         \     \"value\": \"{\\r\\n  \\\"unityGameObject\\\": \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
-        \   }\r\n  }\r\n]"
+        \   }\r\n  },\r\n  {\r\n    \"Key\": \"hand\",\r\n    \"Value\": {\r\n      \"type\":
+        \"Holo.Handness, HFGesturesComponent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \     \"value\": \"{HFRuntimeSerializationMode::ENUM::Holo.Handness, HFGesturesComponent,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::7}\"\r\n    }\r\n  }\r\n]"
       relativeToTransform: {fileID: 765333343}
       serializationMode: HFRuntimeSerializationMode
     - name: nbCommands
@@ -5176,83 +5505,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824899555}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &850067556
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4501034587717113410}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_Name
-      value: Partie3FBX
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.388
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.759999
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.359
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000003793077
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.000000068839384
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1d6d839b24de45043887437d8281c851, type: 3}
---- !u!4 &850067557 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 1d6d839b24de45043887437d8281c851,
-    type: 3}
-  m_PrefabInstance: {fileID: 850067556}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &850067558 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 1d6d839b24de45043887437d8281c851,
-    type: 3}
-  m_PrefabInstance: {fileID: 850067556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937173984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,12 +5596,98 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937173984}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &939892874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400010, guid: a823a74453e30bb4fbf701830680ec19,
-    type: 3}
-  m_PrefabInstance: {fileID: 4501034587681362491}
+--- !u!1 &942076056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942076057}
+  - component: {fileID: 942076061}
+  - component: {fileID: 942076060}
+  - component: {fileID: 942076059}
+  m_Layer: 0
+  m_Name: Lumiere1(Noire)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &942076057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942076056}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.23670012, y: 0.2414, z: 0.05250141}
+  m_LocalScale: {x: 0.045000046, y: 0.010000015, z: 0.045000017}
+  m_Children: []
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &942076059
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942076056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &942076060
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942076056}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: aa384a0b1a0bd5346a7750fb50cfd6bc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &942076061
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942076056}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1006847720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5380,8 +5718,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.2491}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 9
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1006847722
 CapsuleCollider:
@@ -5502,11 +5840,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023795438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.79, y: 0, z: -40.12}
+  m_LocalPosition: {x: 9.79, y: 0, z: -35.976997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076410490
 GameObject:
@@ -5594,11 +5932,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076410490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.0525}
+  m_LocalPosition: {x: 0.2367, y: 0.2417, z: 0.0525}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 6
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099195531
 GameObject:
@@ -5721,8 +6059,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.185}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 4
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1122445269
 CapsuleCollider:
@@ -5783,6 +6121,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122445267}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1153067340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4501034587329925424}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_Name
+      value: Partie4bis
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.706666
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.753332
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.826666
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.99996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 28ba7cb3c8433524c955cb0b40d50c09, type: 3}
+--- !u!4 &1153067341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 28ba7cb3c8433524c955cb0b40d50c09,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153067340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1153067342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 28ba7cb3c8433524c955cb0b40d50c09,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153067340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1153979277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5988,6 +6415,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!4 &1186563271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: 4ab03d19c471bae4aaeffb5f3fae9f96,
+    type: 3}
+  m_PrefabInstance: {fileID: 1186963009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1186563277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400012, guid: 4ab03d19c471bae4aaeffb5f3fae9f96,
+    type: 3}
+  m_PrefabInstance: {fileID: 1186963009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1186963009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6077,12 +6516,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: eb6706e3e6942d84d9176451b0b256e6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ab03d19c471bae4aaeffb5f3fae9f96, type: 3}
---- !u!4 &1186963010 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: 4ab03d19c471bae4aaeffb5f3fae9f96,
-    type: 3}
-  m_PrefabInstance: {fileID: 1186963009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1187789274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6115,6 +6548,95 @@ Transform:
   m_Father: {fileID: 470956539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1189228382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4501034587746383721}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_Name
+      value: Partie1bis
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.329999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.753332
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.340001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.99996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 894893ebbe824274cbdb2b5718d0d7c2, type: 3}
+--- !u!4 &1189228383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 894893ebbe824274cbdb2b5718d0d7c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1189228382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1189228384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 894893ebbe824274cbdb2b5718d0d7c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1189228382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1264748543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6829,6 +7351,95 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1668290971
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4501034587717113410}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_Name
+      value: Partie3bis
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37666512
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.753332
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3499975
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000003793077
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.000000068839384
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.99996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 99.99996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 61253541a6216a54eaec290e65095aef, type: 3}
+--- !u!4 &1668290972 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 61253541a6216a54eaec290e65095aef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1668290971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1668290973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 61253541a6216a54eaec290e65095aef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1668290971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1683749873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7027,177 +7638,11 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
   attachedAssetId: 
   originIsClient: 0
---- !u!1001 &1875195831
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4501034587329925424}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_Name
-      value: Partie4FBX
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.708
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.759999
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.49999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87400701ddf409f4d8343c5ceddd398b, type: 3}
---- !u!4 &1875195832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 87400701ddf409f4d8343c5ceddd398b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1875195831}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1875195833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 87400701ddf409f4d8343c5ceddd398b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1875195831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1877228254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 28ec6e930ffd70441b0ab1f8f5c44047,
     type: 3}
   m_PrefabInstance: {fileID: 1618607148}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1933366399
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4501034588723955551}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_Name
-      value: Partie2FBX
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.379
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.759999
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.472
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.49999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7c231aeeb7fd67c4a96218b4b69a9132, type: 3}
---- !u!4 &1933366400 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 7c231aeeb7fd67c4a96218b4b69a9132,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933366399}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1933366401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 7c231aeeb7fd67c4a96218b4b69a9132,
-    type: 3}
-  m_PrefabInstance: {fileID: 1933366399}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1979122349
 GameObject:
@@ -7229,8 +7674,8 @@ Transform:
   m_LocalPosition: {x: 0.2367, y: 0.2406, z: 0.2491}
   m_LocalScale: {x: 0.045, y: 0.01, z: 0.045}
   m_Children: []
-  m_Father: {fileID: 1186963010}
-  m_RootOrder: 5
+  m_Father: {fileID: 1186563271}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1979122351
 CapsuleCollider:
@@ -7761,7 +8206,7 @@ Transform:
   m_LocalPosition: {x: 5.9799995, y: 3.18, z: 6.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1875195832}
+  - {fileID: 1153067341}
   m_Father: {fileID: 4501034587476625076}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7805,7 +8250,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1875195833}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1153067342}\"\r\n}"
       relativeToTransform: {fileID: 4501034587329925424}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -7831,7 +8276,7 @@ MonoBehaviour:
         serializationMode: HFUnityEditorSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587329925424}
         serializationMode: HFUnityEditorSerializationMode
       - name: GameObject
@@ -7846,7 +8291,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie4FBX::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie4bis::}\"\r\n}"
       relativeToTransform: {fileID: 4501034587329925424}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -7872,7 +8317,7 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587329925424}
         serializationMode: HFRuntimeSerializationMode
       - name: GameObject
@@ -8020,299 +8465,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4501034587681362468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &4501034587680966833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: a823a74453e30bb4fbf701830680ec19,
+    type: 3}
+  m_PrefabInstance: {fileID: 4501034587681362491}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317133838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  behaviourFullName: DroneMovementBehaviour2
-  manager: {fileID: 0}
-  behaviourDefinitionRelativeFilePath: 
-  editorParametersJson: 
-  runtimeParametersJson: 
-  editorParameters:
-    behaviourName: DroneMovementBehaviour2
-    entries:
-    - name: transform
-      serializedType: Holo.HoloTransform, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::5a8b2aa157397e243a68ecf26f97517f::939892874}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: maxSpeed
-      serializedType: System.Single
-      serializedValue: 0.02
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: speed
-      serializedType: Holo.HoloVector3, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"vector\": \"{\\\"x\\\":0.0,\\\"y\\\":0.0,\\\"z\\\":0.0,\\\"magnitude\\\":0.0,\\\"sqrMagnitude\\\":0.0}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: detectionDistance
-      serializedType: System.Single
-      serializedValue: 0.16
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: checkPoints
-      serializedType: Holo.HoloGameObject[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "[\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034589031174541}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588938711965}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588449702753}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588661827698}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587166216086}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587074364043}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587469345803}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588204169771}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587786101651}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587941925767}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034587593454345}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588503390154}\"\r\n
-        \ }\r\n]"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: checkPointsTransform
-      serializedType: Holo.HoloTransform[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "[\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034589031174540}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034588938711964}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034588449702752}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034588661827709}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587166216081}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587074364042}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587469345802}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034588204169770}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587786101650}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587941925766}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034587593454344}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::4501034588503390132}\"\r\n
-        \ }\r\n]"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: startPoint
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588798542657}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: currentCheckPoint
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: vent
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588890975622}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: IDSeveurText
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7093717619294448910}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: delayBeforeVentDisseppearance
-      serializedType: System.Single
-      serializedValue: 3
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFUnityEditorSerializationMode
-    components:
-    - component:
-        name: victorySoundAudioSource
-        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      attributes:
-      - name: FadeIn
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: FadeOut
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: NetworkShared
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: SharedAssetName
-        serializedType: System.String
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: AudioSource
-        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::317133841}\"\r\n}"
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: NetworkName
-        serializedType: System.String
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFUnityEditorSerializationMode
-  runtimeParameters:
-    behaviourName: DroneMovementBehaviour2
-    entries:
-    - name: transform
-      serializedType: Holo.HoloTransform, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::CURRENT_GAMEOBJECT::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: maxSpeed
-      serializedType: System.Single
-      serializedValue: 0.02
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: speed
-      serializedType: Holo.HoloVector3, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"vector\": \"{\\\"x\\\":0.0,\\\"y\\\":0.0,\\\"z\\\":0.0,\\\"magnitude\\\":0.0,\\\"sqrMagnitude\\\":0.0}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: detectionDistance
-      serializedType: System.Single
-      serializedValue: 0.16
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: checkPoints
-      serializedType: Holo.HoloGameObject[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "[\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint1::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint2::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint3::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint4::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint5::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint6::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint7::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint8::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint9::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint10::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/CheckPoint11::}\"\r\n
-        \ },\r\n  {\r\n    \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/FinishPoint::}\"\r\n
-        \ }\r\n]"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: checkPointsTransform
-      serializedType: Holo.HoloTransform[], HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "[\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint1::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint2::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint3::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint4::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint5::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint6::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint7::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint8::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint9::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint10::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/CheckPoint11::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ },\r\n  {\r\n    \"unityTransform\": \"{HFRuntimeSerializationMode::Component::0::../CheckPoints/FinishPoint::::UnityEngine.Transform,
-        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n
-        \ }\r\n]"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: startPoint
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../CheckPoints/StartPoint::}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: currentCheckPoint
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: vent
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::..::}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: IDSeveurText
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../../Wifi/IDServeur::}\"\r\n}"
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    - name: delayBeforeVentDisseppearance
-      serializedType: System.Single
-      serializedValue: 3
-      relativeToTransform: {fileID: 939892874}
-      serializationMode: HFRuntimeSerializationMode
-    components:
-    - component:
-        name: victorySoundAudioSource
-        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      attributes:
-      - name: FadeIn
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      - name: FadeOut
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      - name: NetworkShared
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      - name: SharedAssetName
-        serializedType: System.String
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      - name: AudioSource
-        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFRuntimeSerializationMode::Component::0::CURRENT_GAMEOBJECT::::UnityEngine.AudioSource,
-          UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-      - name: NetworkName
-        serializedType: System.String
-        serializedValue: NULL
-        relativeToTransform: {fileID: 939892874}
-        serializationMode: HFRuntimeSerializationMode
-  attachedAssetId: 
-  originIsClient: 0
 --- !u!1001 &4501034587681362491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8478,6 +8636,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: aa384a0b1a0bd5346a7750fb50cfd6bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a823a74453e30bb4fbf701830680ec19, type: 3}
+--- !u!1 &4501034587681395857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: a823a74453e30bb4fbf701830680ec19,
+    type: 3}
+  m_PrefabInstance: {fileID: 4501034587681362491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4501034587717113410
 Transform:
   m_ObjectHideFlags: 0
@@ -8489,7 +8653,7 @@ Transform:
   m_LocalPosition: {x: 15.17, y: 3.18, z: 13.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 850067557}
+  - {fileID: 1668290972}
   m_Father: {fileID: 4501034587476625076}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8533,7 +8697,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::850067558}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1668290973}\"\r\n}"
       relativeToTransform: {fileID: 4501034587717113410}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -8559,7 +8723,7 @@ MonoBehaviour:
         serializationMode: HFUnityEditorSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587717113410}
         serializationMode: HFUnityEditorSerializationMode
       - name: GameObject
@@ -8574,7 +8738,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie3FBX::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie3bis::}\"\r\n}"
       relativeToTransform: {fileID: 4501034587717113410}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -8600,7 +8764,7 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587717113410}
         serializationMode: HFRuntimeSerializationMode
       - name: GameObject
@@ -8634,7 +8798,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::80384171}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1189228384}\"\r\n}"
       relativeToTransform: {fileID: 4501034587746383721}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -8660,7 +8824,7 @@ MonoBehaviour:
         serializationMode: HFUnityEditorSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587746383721}
         serializationMode: HFUnityEditorSerializationMode
       - name: GameObject
@@ -8675,7 +8839,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie1FBX::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie1bis::}\"\r\n}"
       relativeToTransform: {fileID: 4501034587746383721}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -8701,7 +8865,7 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034587746383721}
         serializationMode: HFRuntimeSerializationMode
       - name: GameObject
@@ -8723,7 +8887,7 @@ Transform:
   m_LocalPosition: {x: -7.01, y: 3.18, z: 18.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 80384170}
+  - {fileID: 1189228383}
   m_Father: {fileID: 4501034587476625076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8964,7 +9128,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1933366401}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::503564274}\"\r\n}"
       relativeToTransform: {fileID: 4501034588723955551}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -8990,7 +9154,7 @@ MonoBehaviour:
         serializationMode: HFUnityEditorSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034588723955551}
         serializationMode: HFUnityEditorSerializationMode
       - name: GameObject
@@ -9005,7 +9169,7 @@ MonoBehaviour:
     - name: ventPart
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie2FBX::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/Partie2bis::}\"\r\n}"
       relativeToTransform: {fileID: 4501034588723955551}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -9031,7 +9195,7 @@ MonoBehaviour:
         serializationMode: HFRuntimeSerializationMode
       - name: Radius
         serializedType: System.Single
-        serializedValue: 2
+        serializedValue: 1.5
         relativeToTransform: {fileID: 4501034588723955551}
         serializationMode: HFRuntimeSerializationMode
       - name: GameObject
@@ -9053,7 +9217,7 @@ Transform:
   m_LocalPosition: {x: 6.959999, y: 3.18, z: 25.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1933366400}
+  - {fileID: 503564273}
   m_Father: {fileID: 4501034587476625076}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9095,14 +9259,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4501034588890975622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3, y: 1.41, z: -5.29}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalPosition: {x: 1.477, y: 1.891, z: -0.1}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_Children:
   - {fileID: 4501034587665779946}
   - {fileID: 4501034587476625076}
-  - {fileID: 939892874}
+  - {fileID: 4501034587680966833}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4501034588890975622
 GameObject:
@@ -9113,6 +9277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4501034588890975617}
+  - component: {fileID: 4501034588890975623}
   m_Layer: 0
   m_Name: Conduit
   m_TagString: Untagged
@@ -9120,6 +9285,129 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &4501034588890975623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501034588890975622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8551cbb2ac46396408ce155475b77d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviourFullName: StopRotationBehaviour
+  manager: {fileID: 0}
+  behaviourDefinitionRelativeFilePath: 
+  editorParametersJson: 
+  runtimeParametersJson: 
+  editorParameters:
+    behaviourName: StopRotationBehaviour
+    entries: []
+    components:
+    - component:
+        name: editionComponent
+        serializedType: Holo.EditionComponent, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      attributes:
+      - name: EditModeActions
+        serializedType: Holo.EditModeActions, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.EditModeActions,
+          HSComponents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AuthorizedRotation
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.HandleAxes,
+          HSComponents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::None}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AuthorizedTranslation
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.HandleAxes,
+          HSComponents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Everything}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AuthorizedScale
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.HandleAxes,
+          HSComponents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Everything}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: HandlerTarget
+        serializedType: Holo.HoloCollider, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityCollider\": \"NULL\"\r\n}"
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: GameObject
+        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588890975622}\"\r\n}"
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFUnityEditorSerializationMode
+  runtimeParameters:
+    behaviourName: StopRotationBehaviour
+    entries: []
+    components:
+    - component:
+        name: editionComponent
+        serializedType: Holo.EditionComponent, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      attributes:
+      - name: EditModeActions
+        serializedType: Holo.EditModeActions, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.EditModeActions,
+          HSComponents, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AuthorizedRotation
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.HandleAxes, HSComponents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AuthorizedTranslation
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.HandleAxes, HSComponents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::-1}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AuthorizedScale
+        serializedType: Holo.HandleAxes, HSComponents, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.HandleAxes, HSComponents,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::-1}'
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      - name: HandlerTarget
+        serializedType: Holo.HoloCollider, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityCollider\": \"NULL\"\r\n}"
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+      - name: GameObject
+        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\"\r\n}"
+        relativeToTransform: {fileID: 4501034588890975617}
+        serializationMode: HFRuntimeSerializationMode
+  attachedAssetId: 
+  originIsClient: 0
 --- !u!4 &4501034588938711964
 Transform:
   m_ObjectHideFlags: 0
