@@ -6,10 +6,11 @@ public class BeginVentPartBehaviour : HoloBehaviour
 {
     //Empty nommé "Conduit" qui contient tout ce qui a à voir avec le conduit d'aeration et le drone
     [Serialized] private HoloGameObject vent;
+
     //Texte "Drone piraté" présent sur l'interface de la wifi
     [Serialized] private readonly HoloGameObject hackedText;
     //true à partir du moment où le drone à été piraté
-    [Serialized] private bool isDroneHacked = false;
+    public bool isDroneHacked = false;
     //AudioSource sur la download bar qui permet de jouer le son "Drone piraté !"
     [SharedAudioComponent] private readonly SharedAudioComponent dronePirateAudioSource;
 

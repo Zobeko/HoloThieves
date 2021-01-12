@@ -10,10 +10,9 @@ Material:
   m_Name: Vent
   m_Shader: {fileID: 4800000, guid: 4fb44a172f6ae0646b300d4bfdc2f35b, type: 3}
   m_ShaderKeywords: _ADVANCEDSECTION_ON _ALPHAPREMULTIPLY_ON _COLORSPACE_DEFAULT _COMMONSECTION_ON
-    _FRESNELLIGHTOPERATION_ADDITIVE _FRESNELLIGHT_INVERSE _HIGHLIGHT_LERP _INDIRECT_CUSTOM
-    _INVERSEMAP_NONE _LAMBERTSHADING_OFF _LAMBERT_CUSTOM _LIGHTMAPOPERATION_MULTIPLY
-    _NORMALMODE_OFF _REFLECTION_OFF _SUPPORTDISTANCEFADE_ON _USEFRESNELREFLECTION_ON
-    _UVSEC_UV1 _VERTEXCOLOROPERATION_OFF _VERTEXDISP_NOR
+    _FRESNELLIGHTOPERATION_ADDITIVE _FRESNELLIGHT_INVERSE _INDIRECT_OFF _INVERSEMAP_NONE
+    _LAMBERTSHADING_OFF _LAMBERT_OFF _LIGHTMAPOPERATION_MULTIPLY _NORMALMODE_OFF _REFLECTION_OFF
+    _SUPPORTDISTANCEFADE_ON _USEFRESNELREFLECTION_ON _USETEXTURE_ON _UVSEC_UV1 _VERTEXCOLOROPERATION_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -29,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _IndirectCube:
-        m_Texture: {fileID: 8900000, guid: 496560d4af48feb46981ca2493743069, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Lightmap:
@@ -93,15 +92,15 @@ Material:
     - _HighlightSharpeness: 0.5
     - _HighlightSize: 1
     - _Hue: 0
-    - _IndirectLight: 2.5
-    - _IndirectSource: 2
+    - _IndirectLight: 1
+    - _IndirectSource: 0
     - _InverseMap: 0
-    - _LambertShading: 2
-    - _LambertShadingAmount: 0.3
+    - _LambertShading: 0
+    - _LambertShadingAmount: 0.4
     - _LambertShadingMode: 2
     - _LightMapOperation: 0
     - _LightmapIntensity: 1
-    - _MaterialType: 1
+    - _MaterialType: 6
     - _Mode: 3
     - _NormalIntensity: 1
     - _NormalMapIntensity: 1
@@ -159,11 +158,11 @@ Material:
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
-    - _Color: {r: 0.8392157, g: 0.58431375, b: 0.02745098, a: 0.32941177}
+    - _Color: {r: 0.8392157, g: 0.58431375, b: 0.02745098, a: 0.18039216}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 0, g: 0.031850006, b: 0.049000002, a: 1}
+    - _FresnelColor: {r: 0, g: 0.3985333, b: 0.49, a: 0.627451}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LambertLightDirection: {r: 25, g: 45, b: 0, a: 1}
+    - _LambertLightDirection: {r: -1, g: 4, b: 4, a: 1}
     - _SlicePlaneEdgeColor: {r: 1, g: 1, b: 1, a: 0}
     - _VertexColorMultiplier: {r: 1, g: 1, b: 1, a: 1}

@@ -535,8 +535,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: HOLOSCENE_VERSION_2020_2_1
-    14: HOLOSCENE_VERSION_2020_2_1
+    1: HOLOSCENE_VERSION_2020_3_0
+    14: HOLOSCENE_VERSION_2020_3_0
   platformArchitecture: {}
   scriptingBackend:
     Metro: 2

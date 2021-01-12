@@ -12,8 +12,19 @@ public class WifiAreaBehaviour : HoloBehaviour
     //Animator de la borne WIFI
     [SharedAnimatorComponent] private SharedAnimatorComponent wifiAnimator;
 
+    [SharedAnimatorComponent] private SharedAnimatorComponent downloadBarAnimator;
+
+    [SharedAudioComponent] private SharedAudioComponent vousEtesConnecteALaWifiAudioSource;
+
+    [Serialized] private HoloGameObject panneauIndiceCode;
+
+    [Serialized] private HoloGameObject conduit;
+
     //HoloGameObject de l'interface WIFI
     [Serialized] private HoloGameObject wifiBoard;
+
+    [Serialized] private HoloGameObject feedbackZoneWifi;
+    
 
     //true quand le bouton WIFI est appuyé
     private bool isButtonTrigger = false;
@@ -21,6 +32,9 @@ public class WifiAreaBehaviour : HoloBehaviour
     private bool isWifiActivated = false;
     //Timer gérant le delais de connexion à la WIFI
     private float timerWifiBoard = 0f;
+
+    private bool isWifiBoardActivated = false;
+    //private bool isDroneHacked = false;
     //Delais de la connexion WIFI 
     [Serialized] private readonly float delayBeforeWifiBoardApparition;
 
@@ -39,6 +53,7 @@ public class WifiAreaBehaviour : HoloBehaviour
         userPositionComponent.OnUserEnter += OnUserEnter;
         userPositionComponent.OnUserExit += OnUserExit;
         Async.OnUpdate += Update;
+
     }
 
     
@@ -46,12 +61,13 @@ public class WifiAreaBehaviour : HoloBehaviour
     public void Update()
     {
         
+        
 
 
         //On récupère le booleen ButtonIsTrigger qui est à truq quand on appuie sur le bouton WIFI
         isButtonTrigger = wifiAnimator.GetBoolParameter("ButtonIsTrigger");
         //Si on appuie sur le bouton WIFI & l'interface WIFI n'est pas encore activée & on est dans la zone wifi & c'est la 1ère fois quon active la WIFI
-        if (isButtonTrigger && !wifiBoard.activeSelf && isInWifiArea && !isWifiActivated)
+        if (isButtonTrigger && !isWifiBoardActivated && isInWifiArea && !isWifiActivated)
         {
 
             
@@ -85,9 +101,17 @@ public class WifiAreaBehaviour : HoloBehaviour
 
                 //Quand les 4 lumières sont vertes, on active la WIFI (on fait apparaitre l'interface WIFI)
                 wifiBoard.SetActive(true);
+                vousEtesConnecteALaWifiAudioSource.Play();
+                isWifiBoardActivated = true;
+                
                 //On dit que la WIFI a été activé (pour ne pas pouvoir répeter cette action)
                 isWifiActivated = true;
             }
+        }
+
+        if (isWifiActivated)
+        {
+            feedbackZoneWifi.SetActive(true);
         }
     }
 
@@ -96,9 +120,20 @@ public class WifiAreaBehaviour : HoloBehaviour
     //Appelée quand le joueur entre dans la zone WIFI
     public void OnUserEnter()
     {
+        Log("IN");
+
         isInWifiArea = true;
         wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
-        Log("IN");
+
+        if (conduit.activeSelf)
+        {
+            downloadBarAnimator.SetBoolParameter("isDroneHacked", true);
+        }
+
+        if (isWifiBoardActivated && !panneauIndiceCode.activeSelf )
+        {
+            wifiBoard.SetActive(true);
+        }
         
     }
 
@@ -106,11 +141,12 @@ public class WifiAreaBehaviour : HoloBehaviour
     //Appelée quand le joueur sort de la zone WIFI
     public void OnUserExit()
     {
+        Log("OUT");
         isInWifiArea = false;
         //On envoie isInWifiArea à l'Animator du pannel de feedback zone WIFI
         wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
         wifiBoard.SetActive(false);
-        Log("OUT");
+        
     }
 
 
