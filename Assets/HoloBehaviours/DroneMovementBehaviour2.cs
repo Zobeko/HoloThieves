@@ -34,20 +34,29 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     [Serialized] private readonly HoloGameObject IDSeveurText;
     [Serialized] private HoloGameObject panneauIndiceCode;
     [Serialized] private HoloGameObject panneauWifi;
+
+    private bool isDroneTCPConnectionTrue = false;
         
     //Durée du delay avant la disparition du conduit (et apparition IDServeur)
     [Serialized] private readonly float delayBeforeVentDisseppearance;
 
     private int numeroDuCurrentChechpoint = 0;
 
+    [Serialized] private HoloGameObject tcpHandler;
+    private TCPHandler tcpHandlerScript;
+
 
     public override void Start()
     {
-        Log(transform.forward.ToString());
+        //Log(transform.forward.ToString());
 
         //Log("Start DroneMovement");
         //Log("numeroDuCurrentChechpoint start = " + numeroDuCurrentChechpoint.ToString());
         Async.OnUpdate += Update;
+
+        tcpHandlerScript = (TCPHandler)tcpHandler.GetBehaviour("TCPHandler");
+
+        
 
         /*for (int i = 0; i < 13; i++)
         {
@@ -63,14 +72,20 @@ public class DroneMovementBehaviour2 : HoloBehaviour
         //Si le labyrinthe/conduit est affiché 
         if (vent.activeSelf)
         {
-            Log("if(vent.activeSelf)");
+            if (!isDroneTCPConnectionTrue)
+            {
+                tcpHandlerScript.droneTCPConnexion = true;
+                isDroneTCPConnectionTrue = true;
+            }
+
+            //Log("if(vent.activeSelf)");
             //Gestion des changement de currentCheckPoint lorsque le drone est assez proche d'un checkPoint[i]
             CheckPointSubstitution();
 
             //Gestion des déplacements du drone en fonction du currentCheckPoint
             DroneMovement();
 
-            
+            //Log(tcpHandlerScript.droneTCPConnexion.ToString());
             
         }
     }
@@ -83,36 +98,57 @@ public class DroneMovementBehaviour2 : HoloBehaviour
         //xPos
         if((numeroDuCurrentChechpoint == 0) || (numeroDuCurrentChechpoint==2) || (numeroDuCurrentChechpoint==4) || (numeroDuCurrentChechpoint==10))
         {
-            Log("X Positive");
-            speed = -transform.forward;
+            float xSpeed = tcpHandlerScript.xDrone;
+            if (xSpeed < -0.2f)
+            {
+                //Log("X Positive");
+                speed = transform.forward * xSpeed;
+                //Log(xSpeed.ToString());
+            }
         }
         //xNeg
         else if((numeroDuCurrentChechpoint==6) || (numeroDuCurrentChechpoint == 8))
         {
-            Log("X Negative");
-            speed = transform.forward;
+            float xSpeed = tcpHandlerScript.xDrone;
+            //Log("X Negative");
+            if (xSpeed > 0.2f)
+            {
+                //Log("X Positive");
+                speed = transform.forward * xSpeed;
+                //Log(xSpeed.ToString());
+            }
         }
         //zPos
         else if ((numeroDuCurrentChechpoint == 1) || (numeroDuCurrentChechpoint == 7))
         {
-           Log("Y Positive");
-            speed = transform.right;
+            float ySpeed = tcpHandlerScript.yDrone;
+            //Log("Y Positive");
+            if (ySpeed > 0.2f)
+            {
+                speed = transform.right * ySpeed;
+            }
         }
         //zNeg
         else if ((numeroDuCurrentChechpoint == 3) || (numeroDuCurrentChechpoint == 5) || (numeroDuCurrentChechpoint == 9) || (numeroDuCurrentChechpoint == 11)) 
         {
-            Log("Y Negative");
-            speed = -transform.right;
+            float ySpeed = tcpHandlerScript.yDrone;
+            //Log("Y Negative");
+            if (ySpeed < -0.2f)
+            {
+                speed = transform.right * ySpeed;
+            }
         }
         //FinishPoint
         
         if (numeroDuCurrentChechpoint == 12)
         {
-            Log("Finish");
+            //Log("Finish");
+            
 
             //Si c'est la première fois qu'on finit le labyrinthe (évite que ces actions puissent être répétées plusieurs fois)
             if (!isVentFinished)
             {
+                tcpHandlerScript.droneTCPConnexion = false;
                 //On joue le son de victoire
                 victorySoundAudioSource.Play();
                 //On dit qu'on a finit le labyrinthe (important pour la boucle if juste au dessus) 
@@ -136,7 +172,7 @@ public class DroneMovementBehaviour2 : HoloBehaviour
         }
 
         //On déplace le drone 
-        Log(numeroDuCurrentChechpoint.ToString());
+        //Log(numeroDuCurrentChechpoint.ToString());
 
 
         transform.position +=  speed * maxSpeed * TimeHelper.deltaTime;
@@ -149,10 +185,10 @@ public class DroneMovementBehaviour2 : HoloBehaviour
         //Si le drone est à moins de 1m d'un checkPoint
         if (numeroDuCurrentChechpoint < 12)
         {
-            Log("numeroDuCurrentChechpoint = " + numeroDuCurrentChechpoint.ToString());
+            //Log("numeroDuCurrentChechpoint = " + numeroDuCurrentChechpoint.ToString());
             if ((HoloVector3.Distance(transform.position, checkPoints[numeroDuCurrentChechpoint + 1].transform.position) < detectionDistance))
             {
-                Log("Transform");
+                //Log("Transform");
                 //Ce checkPoint devient le currentCheckPoint
                 numeroDuCurrentChechpoint++;
             }

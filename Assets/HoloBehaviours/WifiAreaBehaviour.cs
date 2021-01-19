@@ -8,7 +8,7 @@ public class WifiAreaBehaviour : HoloBehaviour
     //Composant permettant de savoir quand le joueur est dans la zone WIFI
     [UserPositionTrigger] private UserPositionTriggerComponent userPositionComponent;
     //Animator du panel gérant apparition et disparition du logo WIFI quand on entre et sort de la zone WIFI (feedback zone WIFI)
-    [SharedAnimatorComponent] private SharedAnimatorComponent wifiUIAnimator;
+    //[SharedAnimatorComponent] private SharedAnimatorComponent wifiUIAnimator;
     //Animator de la borne WIFI
     [SharedAnimatorComponent] private SharedAnimatorComponent wifiAnimator;
 
@@ -123,7 +123,7 @@ public class WifiAreaBehaviour : HoloBehaviour
         Log("IN");
 
         isInWifiArea = true;
-        wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
+        //wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
 
         if (conduit.activeSelf)
         {
@@ -144,7 +144,7 @@ public class WifiAreaBehaviour : HoloBehaviour
         Log("OUT");
         isInWifiArea = false;
         //On envoie isInWifiArea à l'Animator du pannel de feedback zone WIFI
-        wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
+        //wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
         wifiBoard.SetActive(false);
         
     }
