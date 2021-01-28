@@ -46,6 +46,9 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     private TCPHandler tcpHandlerScript;
 
 
+    
+
+
     public override void Start()
     {
         //Log(transform.forward.ToString());
@@ -76,6 +79,8 @@ public class DroneMovementBehaviour2 : HoloBehaviour
             {
                 tcpHandlerScript.droneTCPConnexion = true;
                 isDroneTCPConnectionTrue = true;
+
+                
             }
 
             //Log("if(vent.activeSelf)");
@@ -163,7 +168,7 @@ public class DroneMovementBehaviour2 : HoloBehaviour
             //Gestion du delais avant dispartion conduit
             if ((tempsAvantDisparition / 60) >= delayBeforeVentDisseppearance)
             {
-                IDSeveurText.SetActive(true);
+                //IDSeveurText.SetActive(true);
                 panneauWifi.SetActive(false);
                 panneauIndiceCode.SetActive(true);
                 vent.SetActive(false);

@@ -30,6 +30,8 @@ public class WifiAreaBehaviour : HoloBehaviour
     private bool isButtonTrigger = false;
     //true quand la WIFI est activée pour la 1ère fois 
     private bool isWifiActivated = false;
+
+    private bool isFeedbackZoneWifiActivated = false;
     //Timer gérant le delais de connexion à la WIFI
     private float timerWifiBoard = 0f;
 
@@ -109,9 +111,10 @@ public class WifiAreaBehaviour : HoloBehaviour
             }
         }
 
-        if (isWifiActivated)
+        if (isWifiActivated && !isFeedbackZoneWifiActivated)
         {
             feedbackZoneWifi.SetActive(true);
+            isFeedbackZoneWifiActivated = true;
         }
     }
 
