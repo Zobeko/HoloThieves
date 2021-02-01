@@ -19,8 +19,7 @@ public class TCPHandler : HoloBehaviour
 
     //true si on s'est déjà connecté une fois au drone (on a envoyé "read_joystick")
     private bool aiJeLeDroitDroneConnection = true;
-    //true si on s'est déjà déconnecté du server (on a envoyé "Disconnection")
-    private bool aiJeLeDroitTCPDisconnection = true;
+
     // true si on s'est déjà déconnecté du drone (on a envoyé "stop_read_joystick")
     private bool aiJeLeDroitDroneDisconnection = false;
 
@@ -39,14 +38,13 @@ public class TCPHandler : HoloBehaviour
 
     [Serialized] private HoloGameObject clueBoard;
     [Serialized] private HoloGameObject wifiZone;
-    [Serialized] private HoloGameObject virtualButtonE3;
+    [Serialized] private HoloGameObject surbrillanceWaterSensor;
     [Serialized] private HoloGameObject finalDownloadPanel;
     [SharedAnimatorComponent] private SharedAnimatorComponent virtualButtonE3Animator;
     private bool isRFIDMessageSent = false;
 
     [Serialized] private HoloGameObject courantRetablitAudioSource;
 
-    private float timerAlarm = 0f;
     private bool timerAlarmON = false;
     [Serialized] private float timerAlarmDelay;
 
@@ -88,11 +86,7 @@ public class TCPHandler : HoloBehaviour
 
 
 
-        if (!TCPConnected && aiJeLeDroitTCPDisconnection)
-        {
-            Disconnection();
-            aiJeLeDroitTCPDisconnection = false;
-        }
+        
 
         if (!droneTCPConnexion)
         {
@@ -101,7 +95,8 @@ public class TCPHandler : HoloBehaviour
 
         if (timerAlarmON)
         {
-            DeclenchementAlarme();
+            Async.InvokeAfterSeconds(DeclenchementAlarme, timerAlarmDelay);
+            timerAlarmON = false;
         }
         
 
@@ -198,6 +193,7 @@ public class TCPHandler : HoloBehaviour
             str = _string.Split('_');
             if (str[0] == "Water")
             {
+                surbrillanceWaterSensor.SetActive(false);
                 AlarmAudioSource.Stop();
                 powerDownAudioSource.Play();
                 buttonTCPConnexion = true;
@@ -263,22 +259,21 @@ public class TCPHandler : HoloBehaviour
     private void DeclenchementAlarme()
     {
 
-        timerAlarm += 1f / 30f;
-        //Log(timerAlarm.ToString());
+        
 
-        if (timerAlarm >= timerAlarmDelay)
-        {
-            //Log("yyyeeeeeey");
-            AlarmAudioSource.Play();
-            waterSensorTcpConnexion = true;
-            timerAlarmON = false;
+        
+        Log("timer alarm !");
+        AlarmAudioSource.Play();
+        waterSensorTcpConnexion = true;
+        
+        surbrillanceWaterSensor.SetActive(true);
 
-        }
+        
 
     }
 
 
-    public void Disconnection()
+    public override void OnDestroy()
     {
         tcpComponent.Send("disconnection");
 

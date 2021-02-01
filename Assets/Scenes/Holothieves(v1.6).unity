@@ -651,10 +651,10 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::729804121099861037}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFUnityEditorSerializationMode
-    - name: virtualButtonE3
+    - name: surbrillanceWaterSensor
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7865580273977661001}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::1373771440}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFUnityEditorSerializationMode
     - name: finalDownloadPanel
@@ -671,7 +671,7 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: timerAlarmDelay
       serializedType: System.Single
-      serializedValue: 2
+      serializedValue: 3
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -913,11 +913,10 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Wifi/feddbackZoneWifiHalf::}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFRuntimeSerializationMode
-    - name: virtualButtonE3
+    - name: surbrillanceWaterSensor
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Bouton
-        virtuel E3::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Sphere::}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFRuntimeSerializationMode
     - name: finalDownloadPanel
@@ -935,7 +934,7 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: timerAlarmDelay
       serializedType: System.Single
-      serializedValue: 2
+      serializedValue: 3
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -2720,7 +2719,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a31e8cdb51674a4499a90528c6f9d47b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2865,12 +2864,6 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::4501034588890975622}\"\r\n}"
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFUnityEditorSerializationMode
-    - name: IDSeveurText
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7093717619294448910}\"\r\n}"
-      relativeToTransform: {fileID: 4501034587680966833}
-      serializationMode: HFUnityEditorSerializationMode
     - name: panneauIndiceCode
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -2885,7 +2878,7 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: delayBeforeVentDisseppearance
       serializedType: System.Single
-      serializedValue: 2.5
+      serializedValue: 3
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFUnityEditorSerializationMode
     - name: tcpHandler
@@ -2897,7 +2890,7 @@ MonoBehaviour:
     - name: croixIndicationDirections
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: NULL
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::5528307094504247544}\"\r\n}"
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -2985,12 +2978,6 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::..::}\"\r\n}"
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFRuntimeSerializationMode
-    - name: IDSeveurText
-      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../../Wifi/IDServeur::}\"\r\n}"
-      relativeToTransform: {fileID: 4501034587680966833}
-      serializationMode: HFRuntimeSerializationMode
     - name: panneauIndiceCode
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -3005,7 +2992,7 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: delayBeforeVentDisseppearance
       serializedType: System.Single
-      serializedValue: 2.5
+      serializedValue: 3
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFRuntimeSerializationMode
     - name: tcpHandler
@@ -3018,7 +3005,7 @@ MonoBehaviour:
     - name: croixIndicationDirections
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: NULL
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../croix1::}\"\r\n}"
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -4709,7 +4696,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ae37404d1a229344a97d044118f5e1e9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5305,6 +5292,8 @@ MonoBehaviour:
   - {fileID: 639674351700654585}
   - {fileID: 6491503495338894408}
   - {fileID: 403638104}
+  - {fileID: 1373771440}
+  - {fileID: 5528307094504247544}
 --- !u!4 &622549083
 Transform:
   m_ObjectHideFlags: 1
@@ -12023,6 +12012,12 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::403638104}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFUnityEditorSerializationMode
+    - name: tcpHandler
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::146289094}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFUnityEditorSerializationMode
     - name: doneesTelechargeesGO
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -12104,6 +12099,13 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../EquationLeurre::}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFRuntimeSerializationMode
+    - name: tcpHandler
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../TCP
+        Handler::}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFRuntimeSerializationMode
     - name: doneesTelechargeesGO
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -12125,6 +12127,97 @@ MonoBehaviour:
     components: []
   attachedAssetId: 
   originIsClient: 0
+--- !u!1 &1373771440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1373771444}
+  - component: {fileID: 1373771443}
+  - component: {fileID: 1373771442}
+  - component: {fileID: 1373771441}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!135 &1373771441
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373771440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1373771442
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373771440}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b2fd16ce40704334a8050ee014e75b02, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1373771443
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373771440}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1373771444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373771440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23, y: 1.469, z: -0.497}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1374959994
 GameObject:
   m_ObjectHideFlags: 0
@@ -14114,7 +14207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639674351700654585}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.5889602, y: -0.05965042, z: -0.88150203}
+  m_LocalPosition: {x: -2.4, y: -0.05965042, z: -0.27}
   m_LocalScale: {x: 20, y: 20, z: 10}
   m_Children: []
   m_Father: {fileID: 577151148}
@@ -14197,7 +14290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &729804121099861038
 Animator:
   serializedVersion: 3
@@ -18515,7 +18608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5528307094504247546
 GameObject:
   m_ObjectHideFlags: 0
@@ -18738,7 +18831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6491503495338894408}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.5089602, y: -0.05965042, z: 1.248498}
+  m_LocalPosition: {x: -1.5089602, y: -0.05965042, z: 0.8}
   m_LocalScale: {x: 20, y: 20, z: 10}
   m_Children: []
   m_Father: {fileID: 577151148}
@@ -20359,7 +20452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8203421696709191498}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.47896028, y: -0.05965042, z: -2.1115022}
+  m_LocalPosition: {x: -1.32, y: -0.05965042, z: -1.26}
   m_LocalScale: {x: 20, y: 20, z: 10}
   m_Children: []
   m_Father: {fileID: 577151148}

@@ -1,4 +1,5 @@
 ﻿using Holo;
+using System;
 using System.Collections;
 
 //HoloBehaviour rattaché au drone
@@ -27,12 +28,10 @@ public class DroneMovementBehaviour2 : HoloBehaviour
 
     //true si le drone à finit le labyrinthe/conduit
     private bool isVentFinished = false;
-    //Timer qui va permettre de créer un pause de 'delayBeforeVentDisseppearance' avant la disparition du conduit (et l'apparition du IDServeur)
-    private int tempsAvantDisparition = 0;
+
     //Empty "Conduit" contenant tout ce qui est en rapport avec le labyrinthe/conduit
     [Serialized] private readonly HoloGameObject vent;
-    //HoloGameObject de l'IDServeur
-    [Serialized] private readonly HoloGameObject IDSeveurText;
+
     [Serialized] private HoloGameObject panneauIndiceCode;
     [Serialized] private HoloGameObject panneauWifi;
 
@@ -62,6 +61,7 @@ public class DroneMovementBehaviour2 : HoloBehaviour
 
         tcpHandlerScript = (TCPHandler)tcpHandler.GetBehaviour("TCPHandler");
 
+        
 
         /*for (int i = 0; i < 13; i++)
         {
@@ -79,6 +79,9 @@ public class DroneMovementBehaviour2 : HoloBehaviour
         {
             if (!isDroneTCPConnectionTrue)
             {
+
+                Async.InvokeAfterSeconds(IndicationApparition, 50f);
+
                 tcpHandlerScript.droneTCPConnexion = true;
                 isDroneTCPConnectionTrue = true;
 
@@ -162,19 +165,19 @@ public class DroneMovementBehaviour2 : HoloBehaviour
                 isVentFinished = true;
             }
 
-            
+
             //On incrémente le timer 
-            tempsAvantDisparition++;
-            
+            Async.InvokeAfterSeconds(VentDisseppearance, delayBeforeVentDisseppearance);
+
 
             //Gestion du delais avant dispartion conduit
-            if ((tempsAvantDisparition / 30) >= delayBeforeVentDisseppearance)
+            /*if ((tempsAvantDisparition / 30) >= delayBeforeVentDisseppearance)
             {
                 //IDSeveurText.SetActive(true);
                 panneauWifi.SetActive(false);
                 panneauIndiceCode.SetActive(true);
                 vent.SetActive(false);
-            }
+            }*/
 
         }
 
@@ -221,9 +224,25 @@ public class DroneMovementBehaviour2 : HoloBehaviour
 
     }
 
-    
+    public void IndicationApparition()
+    {
+        Log("Timer indications drone !");
+        croixIndicationDirections.SetActive(true);
+        return;
+    }
 
-   
+    public void VentDisseppearance()
+    {
+        Log("timer disparition conduit !");
+
+        //IDSeveurText.SetActive(true);
+        panneauWifi.SetActive(false);
+        panneauIndiceCode.SetActive(true);
+        vent.SetActive(false);
+    }
+
+
+
 
 
 

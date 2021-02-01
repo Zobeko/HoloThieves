@@ -75,6 +75,7 @@ public class WifiAreaBehaviour : HoloBehaviour
             
             //On incrémente le timer
             timerWifiBoard += (1 / 60f);
+            
             //Log(timerWifiBoard.ToString());
 
             //On fait passer au vert les lumières de la borne WIFI
@@ -151,6 +152,8 @@ public class WifiAreaBehaviour : HoloBehaviour
         wifiBoard.SetActive(false);
         
     }
+
+    
 
 
 

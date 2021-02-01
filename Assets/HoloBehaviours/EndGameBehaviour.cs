@@ -13,6 +13,8 @@ public class EndGameBehaviour : HoloBehaviour
     [Serialized] private HoloGameObject hexagon;
     [Serialized] private HoloGameObject equation;
 
+    [Serialized] private HoloGameObject tcpHandler;
+
 
     [Serialized] private HoloGameObject doneesTelechargeesGO;
     [Serialized] private HoloGameObject cube10_TriggerEndGame;
@@ -50,6 +52,7 @@ public class EndGameBehaviour : HoloBehaviour
                 circle.SetActive(false);
                 hexagon.SetActive(false);
                 equation.SetActive(false);
+                tcpHandler.SetActive(false);
             }
         }
 
