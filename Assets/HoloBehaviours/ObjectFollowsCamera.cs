@@ -1,6 +1,6 @@
 ﻿using Holo;
 
-//Scrypt rattaché au User qui suit contament la position du joueur casque (utile si on veut que des objets suivent le joueur)
+//Scrypt rattaché au User qui suit contament la position du joueur casque (utile si on veut que des objets suivent le joueur ou trigger des actions en fonction de la position du casque)
 
 public class ObjectFollowsCamera : HoloBehaviour
 {

@@ -13,6 +13,8 @@ public class VentApparitionBehaviour : HoloBehaviour
 
     public override void Start()
     {
+        //Permet d'utiliser les méthode OnUserEnter() et OnUserExit() définies ci dessous 
+        //(méthode permettant de savoir si on est assez proche d'une partie de conduit pour la faire apparaitre)
         userPositionTrigger.OnUserEnter += OnUserEnter;
         userPositionTrigger.OnUserExit += OnUserExit;
     }
@@ -20,6 +22,7 @@ public class VentApparitionBehaviour : HoloBehaviour
     //Est appelée quand le joueur casque entre dans la zone de cette partie de conduit
     public void OnUserEnter()
     {
+        //On affiche la partie concernée
         ventPart.SetActive(true);
 
     }
@@ -27,6 +30,7 @@ public class VentApparitionBehaviour : HoloBehaviour
     //Est appelée quand le joueur casque sort de la zone de cette partie de conduit
     public void OnUserExit()
     {
+        //On fait disparaitre la partie de conduit concernée
         ventPart.SetActive(false);
 
     }

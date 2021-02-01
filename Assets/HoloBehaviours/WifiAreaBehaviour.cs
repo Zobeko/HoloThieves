@@ -7,22 +7,22 @@ public class WifiAreaBehaviour : HoloBehaviour
 {
     //Composant permettant de savoir quand le joueur est dans la zone WIFI
     [UserPositionTrigger] private UserPositionTriggerComponent userPositionComponent;
-    //Animator du panel gérant apparition et disparition du logo WIFI quand on entre et sort de la zone WIFI (feedback zone WIFI)
-    //[SharedAnimatorComponent] private SharedAnimatorComponent wifiUIAnimator;
+
     //Animator de la borne WIFI
     [SharedAnimatorComponent] private SharedAnimatorComponent wifiAnimator;
-
+    //Animator de la borne download bar de la wifi
     [SharedAnimatorComponent] private SharedAnimatorComponent downloadBarAnimator;
-
+    //Audio Source de la wifi
     [SharedAudioComponent] private SharedAudioComponent vousEtesConnecteALaWifiAudioSource;
 
+    //Panneau d'indice apparaissant à la fin du labyrinthe
     [Serialized] private HoloGameObject panneauIndiceCode;
-
+    //Le labyrinthe/conduit d'aération
     [Serialized] private HoloGameObject conduit;
 
     //HoloGameObject de l'interface WIFI
     [Serialized] private HoloGameObject wifiBoard;
-
+    //HoloGameObject du demi cercle représentant la zone wifi
     [Serialized] private HoloGameObject feedbackZoneWifi;
     
 
@@ -31,13 +31,15 @@ public class WifiAreaBehaviour : HoloBehaviour
     //true quand la WIFI est activée pour la 1ère fois 
     private bool isWifiActivated = false;
 
+    //true quand le feedback de la zone wifi est activé
     private bool isFeedbackZoneWifiActivated = false;
     //Timer gérant le delais de connexion à la WIFI
     private float timerWifiBoard = 0f;
 
+    //Permet de savoir si la wifi a déjà été activée ou non 
     private bool isWifiBoardActivated = false;
-    //private bool isDroneHacked = false;
-    //Delais de la connexion WIFI 
+
+    //Delais de la connexion à la WIFI 
     [Serialized] private readonly float delayBeforeWifiBoardApparition;
 
     //HoloGameObject des 4 lumières vertes sur la borne WIFI
@@ -52,8 +54,10 @@ public class WifiAreaBehaviour : HoloBehaviour
 
     public override void Start()
     {
+        //Permet d'utiliser les méthode OnUserEnter() et OnUserExit() définies ci dessous (méthode permettant de savoir si on est dans la zone WIFI ou non)
         userPositionComponent.OnUserEnter += OnUserEnter;
         userPositionComponent.OnUserExit += OnUserExit;
+
         Async.OnUpdate += Update;
 
     }
@@ -76,12 +80,11 @@ public class WifiAreaBehaviour : HoloBehaviour
             //On incrémente le timer
             timerWifiBoard += (1 / 60f);
             
-            //Log(timerWifiBoard.ToString());
 
             //On fait passer au vert les lumières de la borne WIFI
             if ((timerWifiBoard >= delayBeforeWifiBoardApparition*0.25))
             {
-                
+        
                 greenLight1.SetActive(true);
 
             }
@@ -104,6 +107,7 @@ public class WifiAreaBehaviour : HoloBehaviour
 
                 //Quand les 4 lumières sont vertes, on active la WIFI (on fait apparaitre l'interface WIFI)
                 wifiBoard.SetActive(true);
+                //On lance l'adio indiquant qu'on s'est bien connecté à la WIFI
                 vousEtesConnecteALaWifiAudioSource.Play();
                 isWifiBoardActivated = true;
                 
@@ -112,6 +116,7 @@ public class WifiAreaBehaviour : HoloBehaviour
             }
         }
 
+        //Permet de faire apparaitre le feedback de la zone WIFI (demi cercle bleu)
         if (isWifiActivated && !isFeedbackZoneWifiActivated)
         {
             feedbackZoneWifi.SetActive(true);
@@ -127,8 +132,8 @@ public class WifiAreaBehaviour : HoloBehaviour
         Log("IN");
 
         isInWifiArea = true;
-        //wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
-
+        
+        //Si le conduit est activé, on set la valeur true à "isDroneHacked"
         if (conduit.activeSelf)
         {
             downloadBarAnimator.SetBoolParameter("isDroneHacked", true);
@@ -147,8 +152,7 @@ public class WifiAreaBehaviour : HoloBehaviour
     {
         Log("OUT");
         isInWifiArea = false;
-        //On envoie isInWifiArea à l'Animator du pannel de feedback zone WIFI
-        //wifiUIAnimator.SetBoolParameter("isEnabled", isInWifiArea);
+        
         wifiBoard.SetActive(false);
         
     }

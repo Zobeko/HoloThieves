@@ -1,14 +1,11 @@
 ﻿using Holo;
 
+//Script permettant de désactiver la rotation du conduit d'aération en "Edition Mode" dans Holoscene
+
 public class StopRotationBehaviour : HoloBehaviour
 {
-    //[HandlerComponent] private HandlerComponent handler;
+    
     [EditionComponent] private EditionComponent editionComponent;
-
-    /*public override void Start()
-    {
-        handler.attribute.AuthorizedRotation = HandleAxes.None;
-    }*/
 
 
 }
