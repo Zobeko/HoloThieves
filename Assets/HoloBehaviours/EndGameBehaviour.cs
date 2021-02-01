@@ -8,6 +8,10 @@ public class EndGameBehaviour : HoloBehaviour
     [Serialized] private HoloGameObject fakeWifi2;
     [Serialized] private HoloGameObject finalBoard;
     [Serialized] private HoloGameObject virtualButtonE3;
+    [Serialized] private HoloGameObject triangle;
+    [Serialized] private HoloGameObject circle;
+    [Serialized] private HoloGameObject hexagon;
+    [Serialized] private HoloGameObject equation;
 
 
     [Serialized] private HoloGameObject doneesTelechargeesGO;
@@ -16,8 +20,7 @@ public class EndGameBehaviour : HoloBehaviour
 
     private float timerGODisapearance = 0f;
     [Serialized] private float timerDelay;
-    private float timerButtons = 0f;
-    [Serialized] private float timerButtonsDelay;
+
 
 
     public override void Start()
@@ -43,6 +46,10 @@ public class EndGameBehaviour : HoloBehaviour
                 fakeWifi2.SetActive(false);
                 finalBoard.SetActive(false);
                 virtualButtonE3.SetActive(false);
+                triangle.SetActive(false);
+                circle.SetActive(false);
+                hexagon.SetActive(false);
+                equation.SetActive(false);
             }
         }
 

@@ -34,6 +34,8 @@ public class TCPHandler : HoloBehaviour
 
     [SharedAudioComponent]private SharedAudioComponent AlarmAudioSource;
     [SharedAudioComponent] private SharedAudioComponent powerDownAudioSource;
+    [SharedAudioComponent] private SharedAudioComponent codeBonAudioSource;
+    [SharedAudioComponent] private SharedAudioComponent rfidAudioSource;
 
     [Serialized] private HoloGameObject clueBoard;
     [Serialized] private HoloGameObject wifiZone;
@@ -44,7 +46,9 @@ public class TCPHandler : HoloBehaviour
 
     [Serialized] private HoloGameObject courantRetablitAudioSource;
 
-
+    private float timerAlarm = 0f;
+    private bool timerAlarmON = false;
+    [Serialized] private float timerAlarmDelay;
 
 
     //[Serialized] private HoloGameObject cube;
@@ -95,6 +99,10 @@ public class TCPHandler : HoloBehaviour
             keypadTCPConnexion = true;
         }
 
+        if (timerAlarmON)
+        {
+            DeclenchementAlarme();
+        }
         
 
         /*if (virtualButtonE3Animator.GetBoolParameter("isVirtualButtonPressed") && !isRFIDMessageSent)
@@ -172,9 +180,13 @@ public class TCPHandler : HoloBehaviour
 
             if (str[0] == "Keypad")
             {
+                timerAlarmON = true;
+                
+                codeBonAudioSource.Play();
                 clueBoard.SetActive(false);
-                AlarmAudioSource.Play();
-                waterSensorTcpConnexion = true;
+
+                
+
                 keypadTCPConnexion = false;
             }
         }
@@ -201,9 +213,12 @@ public class TCPHandler : HoloBehaviour
 
             string[] str = new string[2];
             str = _string.Split('_');
-            if(str[0] == "Button")
+            
+            if(str[0] == "Button" && virtualButtonE3Animator.GetBoolParameter("isVirtualButtonPressed"))
             {
-                Log("Button pressed !");
+                
+
+                //Log("Button pressed !");
 
                 rfidTCPConnexion = true;
                 tcpComponent.Send("read_RFID");
@@ -222,8 +237,9 @@ public class TCPHandler : HoloBehaviour
             str = _string.Split('_');
             if (str[0] == "RFID")
             {
+                rfidAudioSource.Play();
                 finalDownloadPanel.SetActive(true);
-                Log("RFID !");
+                //Log("RFID !");
                 rfidTCPConnexion = false;
             }
         }
@@ -242,6 +258,25 @@ public class TCPHandler : HoloBehaviour
 
 
     }
+
+
+    private void DeclenchementAlarme()
+    {
+
+        timerAlarm += 1f / 30f;
+        //Log(timerAlarm.ToString());
+
+        if (timerAlarm >= timerAlarmDelay)
+        {
+            //Log("yyyeeeeeey");
+            AlarmAudioSource.Play();
+            waterSensorTcpConnexion = true;
+            timerAlarmON = false;
+
+        }
+
+    }
+
 
     public void Disconnection()
     {

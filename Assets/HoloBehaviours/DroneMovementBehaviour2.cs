@@ -1,4 +1,5 @@
 ﻿using Holo;
+using System.Collections;
 
 //HoloBehaviour rattaché au drone
 public class DroneMovementBehaviour2 : HoloBehaviour
@@ -45,6 +46,8 @@ public class DroneMovementBehaviour2 : HoloBehaviour
     [Serialized] private HoloGameObject tcpHandler;
     private TCPHandler tcpHandlerScript;
 
+    [Serialized] private HoloGameObject croixIndicationDirections;
+
 
     
 
@@ -59,7 +62,6 @@ public class DroneMovementBehaviour2 : HoloBehaviour
 
         tcpHandlerScript = (TCPHandler)tcpHandler.GetBehaviour("TCPHandler");
 
-        
 
         /*for (int i = 0; i < 13; i++)
         {
@@ -166,7 +168,7 @@ public class DroneMovementBehaviour2 : HoloBehaviour
             
 
             //Gestion du delais avant dispartion conduit
-            if ((tempsAvantDisparition / 60) >= delayBeforeVentDisseppearance)
+            if ((tempsAvantDisparition / 30) >= delayBeforeVentDisseppearance)
             {
                 //IDSeveurText.SetActive(true);
                 panneauWifi.SetActive(false);

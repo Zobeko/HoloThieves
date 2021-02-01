@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DroneButton
+  m_Name: Vert
   m_Shader: {fileID: 4800000, guid: 4fb44a172f6ae0646b300d4bfdc2f35b, type: 3}
   m_ShaderKeywords: _ADVANCEDSECTION_ON _COLORSPACE_DEFAULT _COMMONSECTION_ON _FRESNELLIGHTOPERATION_ADDITIVE
     _FRESNELLIGHT_INVERSE _HIGHLIGHT_LERP _INDIRECT_CUSTOM _INVERSEMAP_NONE _LAMBERTSHADING_OFF
@@ -157,7 +157,7 @@ Material:
     - _supportVFace: 0
     m_Colors:
     - _AmbientColor: {r: 0.2, g: 0.2, b: 0.25, a: 1}
-    - _Color: {r: 0, g: 0.49305582, b: 1, a: 1}
+    - _Color: {r: 0.08880003, g: 0.6132076, b: 0, a: 1}
     - _CustomFogColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 0.2524475, g: 0.27974272, b: 0.2924528, a: 1}

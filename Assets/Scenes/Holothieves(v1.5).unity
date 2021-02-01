@@ -390,6 +390,7 @@ Transform:
   m_Children:
   - {fileID: 501663150}
   - {fileID: 1238232861}
+  - {fileID: 525104690}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -647,7 +648,7 @@ MonoBehaviour:
     - name: wifiZone
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::273220299}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::729804121099861037}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFUnityEditorSerializationMode
     - name: virtualButtonE3
@@ -666,6 +667,11 @@ MonoBehaviour:
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::871518002}\"\r\n}"
+      relativeToTransform: {fileID: 146289096}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: timerAlarmDelay
+      serializedType: System.Single
+      serializedValue: 2
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFUnityEditorSerializationMode
     components:
@@ -766,6 +772,84 @@ MonoBehaviour:
         relativeToTransform: {fileID: 146289096}
         serializationMode: HFUnityEditorSerializationMode
     - component:
+        name: codeBonAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::970603835}\"\r\n}"
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+    - component:
+        name: rfidAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFUnityEditorSerializationMode::Component::0::RELATIVE::525104691}\"\r\n}"
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFUnityEditorSerializationMode
+    - component:
         name: virtualButtonE3Animator
         serializedType: Holo.SharedAnimatorComponent, HFHoloBaseImplementation, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -826,7 +910,7 @@ MonoBehaviour:
     - name: wifiZone
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Wifi/feddbackZoneWifi::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Wifi/feddbackZoneWifiHalf::}\"\r\n}"
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFRuntimeSerializationMode
     - name: virtualButtonE3
@@ -847,6 +931,11 @@ MonoBehaviour:
         PublicKeyToken=null
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Bouton
         virtuel E3/CourantRetablitAudioSource::}\"\r\n}"
+      relativeToTransform: {fileID: 146289096}
+      serializationMode: HFRuntimeSerializationMode
+    - name: timerAlarmDelay
+      serializedType: System.Single
+      serializedValue: 2
       relativeToTransform: {fileID: 146289096}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -951,6 +1040,86 @@ MonoBehaviour:
         relativeToTransform: {fileID: 146289096}
         serializationMode: HFRuntimeSerializationMode
     - component:
+        name: codeBonAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFRuntimeSerializationMode::Component::0::/codeBonAudioSource::::UnityEngine.AudioSource,
+          UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+    - component:
+        name: rfidAudioSource
+        serializedType: Holo.SharedAudioComponent, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      attributes:
+      - name: FadeIn
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: FadeOut
+        serializedType: System.Single
+        serializedValue: 0
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkShared
+        serializedType: System.Boolean
+        serializedValue: False
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: SharedAssetName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: AudioSource
+        serializedType: Holo.HoloAudioSource, HFHoloBaseImplementation, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        serializedValue: "{\r\n  \"unityAudioSource\": \"{HFRuntimeSerializationMode::Component::0::../User/RFIDAudioSource::::UnityEngine.AudioSource,
+          UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}\"\r\n}"
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+      - name: NetworkName
+        serializedType: System.String
+        serializedValue: NULL
+        relativeToTransform: {fileID: 146289096}
+        serializationMode: HFRuntimeSerializationMode
+    - component:
         name: virtualButtonE3Animator
         serializedType: Holo.SharedAnimatorComponent, HFHoloBaseImplementation, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
@@ -993,7 +1162,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4990909, y: 4.0421987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 970603834}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2317,103 +2487,11 @@ MonoBehaviour:
   editorParameters:
     behaviourName: Hide
     entries: []
-    components:
-    - component:
-        name: gazeComponent
-        serializedType: Holo.GazeComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      attributes:
-      - name: UseSnap
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: SnapScaleFactor
-        serializedType: System.Single
-        serializedValue: 1.5
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: LongTapDetectionDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: LongGazeDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: ShowLongGazeProgress
-        serializedType: System.Boolean
-        serializedValue: True
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: GameObject
-        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::5a8b2aa157397e243a68ecf26f97517f::213886584}\"\r\n}"
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: ComponentRights
-        serializedType: Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.ComponentRights,
-          HFHoloBaseImplementation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Everyone}'
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFUnityEditorSerializationMode
+    components: []
   runtimeParameters:
     behaviourName: Hide
     entries: []
-    components:
-    - component:
-        name: gazeComponent
-        serializedType: Holo.GazeComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      attributes:
-      - name: UseSnap
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: SnapScaleFactor
-        serializedType: System.Single
-        serializedValue: 1.5
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: LongTapDetectionDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: LongGazeDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: ShowLongGazeProgress
-        serializedType: System.Boolean
-        serializedValue: True
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: GameObject
-        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\"\r\n}"
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
-      - name: ComponentRights
-        serializedType: Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.ComponentRights,
-          HFHoloBaseImplementation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}'
-        relativeToTransform: {fileID: 213400152}
-        serializationMode: HFRuntimeSerializationMode
+    components: []
   attachedAssetId: 
   originIsClient: 0
 --- !u!1 &245105651
@@ -2599,103 +2677,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258198001}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &273220299
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 273587947}
-  - component: {fileID: 276487883}
-  - component: {fileID: 275487755}
-  - component: {fileID: 273220300}
-  m_Layer: 0
-  m_Name: feddbackZoneWifi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!95 &273220300
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273220299}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b3c35c44850aaa44a8f3df245c327f78, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &273587947
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273220299}
-  m_LocalRotation: {x: -0.50000006, y: 0.49999994, z: 0.50000006, w: 0.49999994}
-  m_LocalPosition: {x: -10.252943, y: -6.6647058, z: -1.3899993}
-  m_LocalScale: {x: 1058.8245, y: 1058.826, z: 5.8823547}
-  m_Children: []
-  m_Father: {fileID: 470956539}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &275487755
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273220299}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0c950f3f1ae0c7c4e82202c5de68025f, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &276487883
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273220299}
-  m_Mesh: {fileID: 4300000, guid: 880fcea94b70e674592b8d3e32ac9f58, type: 3}
 --- !u!1 &298676149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +2894,12 @@ MonoBehaviour:
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::146289094}\"\r\n}"
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFUnityEditorSerializationMode
+    - name: croixIndicationDirections
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: NULL
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFUnityEditorSerializationMode
     components:
     - component:
         name: victorySoundAudioSource
@@ -3026,6 +3013,12 @@ MonoBehaviour:
         PublicKeyToken=null
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../../TCP
         Handler::}\"\r\n}"
+      relativeToTransform: {fileID: 4501034587680966833}
+      serializationMode: HFRuntimeSerializationMode
+    - name: croixIndicationDirections
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: NULL
       relativeToTransform: {fileID: 4501034587680966833}
       serializationMode: HFRuntimeSerializationMode
     components:
@@ -3259,6 +3252,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347282569}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &403638104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403638106}
+  - component: {fileID: 403638105}
+  m_Layer: 0
+  m_Name: EquationLeurre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &403638105
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403638104}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2398e58f080c984a9748278f908831f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.8, y: 8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &403638106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403638104}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.46, y: 1.41, z: -1.78}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &460010605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,7 +3509,7 @@ Transform:
   - {fileID: 1621220218}
   - {fileID: 7093717619294744878}
   - {fileID: 1167123205}
-  - {fileID: 273587947}
+  - {fileID: 729804121099624461}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -4111,7 +4183,7 @@ MonoBehaviour:
     - name: feedbackZoneWifi
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::273220299}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::729804121099861037}\"\r\n}"
       relativeToTransform: {fileID: 470956539}
       serializationMode: HFUnityEditorSerializationMode
     - name: delayBeforeWifiBoardApparition
@@ -4301,7 +4373,7 @@ MonoBehaviour:
     - name: feedbackZoneWifi
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/feddbackZoneWifi::}\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::/feddbackZoneWifiHalf::}\"\r\n}"
       relativeToTransform: {fileID: 470956539}
       serializationMode: HFRuntimeSerializationMode
     - name: delayBeforeWifiBoardApparition
@@ -4496,103 +4568,11 @@ MonoBehaviour:
   editorParameters:
     behaviourName: Hide
     entries: []
-    components:
-    - component:
-        name: gazeComponent
-        serializedType: Holo.GazeComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      attributes:
-      - name: UseSnap
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: SnapScaleFactor
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: LongTapDetectionDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: LongGazeDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: ShowLongGazeProgress
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: GameObject
-        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::470956537}\"\r\n}"
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
-      - name: ComponentRights
-        serializedType: Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: '{HFUnityEditorSerializationMode::ENUM::Holo.ComponentRights,
-          HFHoloBaseImplementation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Everyone}'
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFUnityEditorSerializationMode
+    components: []
   runtimeParameters:
     behaviourName: Hide
     entries: []
-    components:
-    - component:
-        name: gazeComponent
-        serializedType: Holo.GazeComponent, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: NULL
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      attributes:
-      - name: UseSnap
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: SnapScaleFactor
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: LongTapDetectionDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: LongGazeDuration
-        serializedType: System.Single
-        serializedValue: 0
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: ShowLongGazeProgress
-        serializedType: System.Boolean
-        serializedValue: False
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: GameObject
-        serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-        serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\"\r\n}"
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
-      - name: ComponentRights
-        serializedType: Holo.ComponentRights, HFHoloBaseImplementation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        serializedValue: '{HFRuntimeSerializationMode::ENUM::Holo.ComponentRights,
-          HFHoloBaseImplementation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::0}'
-        relativeToTransform: {fileID: 470956539}
-        serializationMode: HFRuntimeSerializationMode
+    components: []
   attachedAssetId: 
   originIsClient: 0
 --- !u!1 &492265170
@@ -4902,6 +4882,133 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 503564272}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &525104689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525104690}
+  - component: {fileID: 525104691}
+  m_Layer: 0
+  m_Name: RFIDAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525104690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525104689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 68044650}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &525104691
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525104689}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8c75575031e13214c9b3743819be1ea9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,6 +5164,39 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a528a3a316a80984d913187e3ff64dbf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b061cb77992394c458e0c8e89aeaf8e5, type: 3}
+--- !u!1 &577151147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577151148}
+  m_Layer: 0
+  m_Name: Formes E1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577151148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577151147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5189602, y: 0.05965042, z: 0.73150206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8203421696709032810}
+  - {fileID: 639674351700682201}
+  - {fileID: 6491503495339194472}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622549081
 GameObject:
   m_ObjectHideFlags: 1
@@ -5143,7 +5283,6 @@ MonoBehaviour:
   - {fileID: 1167123200}
   - {fileID: 1621220222}
   - {fileID: 2093424178}
-  - {fileID: 273220299}
   - {fileID: 146289094}
   - {fileID: 501663151}
   - {fileID: 1238232862}
@@ -5158,6 +5297,14 @@ MonoBehaviour:
   - {fileID: 908639554}
   - {fileID: 460010605}
   - {fileID: 804834230}
+  - {fileID: 970603835}
+  - {fileID: 697806297}
+  - {fileID: 729804121099861037}
+  - {fileID: 525104691}
+  - {fileID: 8203421696709191498}
+  - {fileID: 639674351700654585}
+  - {fileID: 6491503495338894408}
+  - {fileID: 403638104}
 --- !u!4 &622549083
 Transform:
   m_ObjectHideFlags: 1
@@ -8986,7 +9133,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: adc290ab90c5ad94eadadbd3c96bbc1d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 11fe476ab2c94f44ab503fea7d0a10ef, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9632,6 +9779,133 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a528a3a316a80984d913187e3ff64dbf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab36aaa50eda153439fed62708078ec4, type: 3}
+--- !u!1 &970603833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970603834}
+  - component: {fileID: 970603835}
+  m_Layer: 0
+  m_Name: codeBonAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970603834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970603833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 146289096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &970603835
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970603833}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9477c6982629fb44e8190296ba4d1986, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1006847720
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,7 +10472,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bb2168aa543579443b233f923bd82c84, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 28f4c4fa7d0edc64cac9bb60366378bd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10662,6 +10936,7 @@ GameObject:
   - component: {fileID: 1167123205}
   - component: {fileID: 1167123204}
   - component: {fileID: 1167123203}
+  - component: {fileID: 1167123201}
   m_Layer: 0
   m_Name: ClueBoard
   m_TagString: Untagged
@@ -10669,6 +10944,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!82 &1167123201
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167123200}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 72a35e5066205c8459b62be0849893cf, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1167123203
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11613,7 +11984,7 @@ MonoBehaviour:
     - name: fakeWifi2
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::697806297}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFUnityEditorSerializationMode
     - name: finalBoard
@@ -11626,6 +11997,30 @@ MonoBehaviour:
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7865580273977661001}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: triangle
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::6491503495338894408}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: circle
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::639674351700654585}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: hexagon
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::8203421696709191498}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFUnityEditorSerializationMode
+    - name: equation
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::403638104}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFUnityEditorSerializationMode
     - name: doneesTelechargeesGO
@@ -11642,12 +12037,7 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: timerDelay
       serializedType: System.Single
-      serializedValue: 2.5
-      relativeToTransform: {fileID: 1333144007}
-      serializationMode: HFUnityEditorSerializationMode
-    - name: timerButtonsDelay
-      serializedType: System.Single
-      serializedValue: 0
+      serializedValue: 10
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFUnityEditorSerializationMode
     components: []
@@ -11670,7 +12060,8 @@ MonoBehaviour:
     - name: fakeWifi2
       serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      serializedValue: "{\r\n  \"unityGameObject\": \"NULL\"\r\n}"
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Wifi
+        Fake 2::}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFRuntimeSerializationMode
     - name: finalBoard
@@ -11684,6 +12075,33 @@ MonoBehaviour:
         PublicKeyToken=null
       serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Bouton
         virtuel E3::}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFRuntimeSerializationMode
+    - name: triangle
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Formes
+        E1/Triangle1::}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFRuntimeSerializationMode
+    - name: circle
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Formes
+        E1/Circle1::}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFRuntimeSerializationMode
+    - name: hexagon
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../Formes
+        E1/Hexagon1::}\"\r\n}"
+      relativeToTransform: {fileID: 1333144007}
+      serializationMode: HFRuntimeSerializationMode
+    - name: equation
+      serializedType: Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      serializedValue: "{\r\n  \"unityGameObject\": \"{HFRuntimeSerializationMode::GameObject::0::../EquationLeurre::}\"\r\n}"
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFRuntimeSerializationMode
     - name: doneesTelechargeesGO
@@ -11701,12 +12119,7 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: timerDelay
       serializedType: System.Single
-      serializedValue: 2.5
-      relativeToTransform: {fileID: 1333144007}
-      serializationMode: HFRuntimeSerializationMode
-    - name: timerButtonsDelay
-      serializedType: System.Single
-      serializedValue: 0
+      serializedValue: 10
       relativeToTransform: {fileID: 1333144007}
       serializationMode: HFRuntimeSerializationMode
     components: []
@@ -12273,7 +12686,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b316e7b48c104ff499491888380cd815, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9ad1f5870615dd443b6a5efc12d8ef90, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13469,7 +13882,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c802d20c596d821449d9239c278a3dbd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7ddca8a6d8687df43831adef5423ecfb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13675,6 +14088,180 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &639674351700654585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639674351700682201}
+  - component: {fileID: 639674351703582201}
+  - component: {fileID: 639674351702583097}
+  m_Layer: 0
+  m_Name: Circle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639674351700682201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639674351700654585}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -3.5889602, y: -0.05965042, z: -0.88150203}
+  m_LocalScale: {x: 20, y: 20, z: 10}
+  m_Children: []
+  m_Father: {fileID: 577151148}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &639674351702583097
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639674351700654585}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 922e157a4f924904b8cd11b2a6926ec7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &639674351703582201
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639674351700654585}
+  m_Mesh: {fileID: 4300000, guid: 07707a32bbae17d4880f5ae312b8b26e, type: 3}
+--- !u!4 &729804121099624461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729804121099861037}
+  m_LocalRotation: {x: -0, y: 0.70723015, z: 0.7069834, w: 0}
+  m_LocalPosition: {x: -0.19411556, y: -6.67, z: -0.4235335}
+  m_LocalScale: {x: 1060.0933, y: 1049.2365, z: 5}
+  m_Children: []
+  m_Father: {fileID: 470956539}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -89.98, y: 90, z: 0}
+--- !u!1 &729804121099861037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729804121099624461}
+  - component: {fileID: 729804121103015981}
+  - component: {fileID: 729804121102050029}
+  - component: {fileID: 729804121099861038}
+  m_Layer: 0
+  m_Name: feddbackZoneWifiHalf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &729804121099861038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729804121099861037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3ccc9fa72b18cc44a01e3c59ada5389, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!23 &729804121102050029
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729804121099861037}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c950f3f1ae0c7c4e82202c5de68025f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &729804121103015981
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729804121099861037}
+  m_Mesh: {fileID: 4300000, guid: 66dd4612358207e4592f5f1eb331796d, type: 3}
 --- !u!95 &786810726152556216
 Animator:
   serializedVersion: 3
@@ -14284,11 +14871,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 893223533167451633}
@@ -17386,6 +17973,7 @@ Transform:
   - {fileID: 4501034587665779946}
   - {fileID: 4501034587476625076}
   - {fileID: 4501034587680966833}
+  - {fileID: 5528307094504410328}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17621,7 +18209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.164, y: 1.06}
+  m_AnchoredPosition: {x: -0.144, y: 1.06}
   m_SizeDelta: {x: 0.3274, y: 0.077}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5248671963512667016
@@ -17651,6 +18239,426 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3151132538749989711}
   m_CullTransparentMesh: 0
+--- !u!33 &5528307094501018864
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247538}
+  m_Mesh: {fileID: 4300008, guid: 2c96d6870149b7440aad512200591c6a, type: 3}
+--- !u!33 &5528307094501018872
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247546}
+  m_Mesh: {fileID: 4300000, guid: 2c96d6870149b7440aad512200591c6a, type: 3}
+--- !u!33 &5528307094501018874
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247548}
+  m_Mesh: {fileID: 4300002, guid: 2c96d6870149b7440aad512200591c6a, type: 3}
+--- !u!33 &5528307094501018876
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247550}
+  m_Mesh: {fileID: 4300004, guid: 2c96d6870149b7440aad512200591c6a, type: 3}
+--- !u!33 &5528307094501018878
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247536}
+  m_Mesh: {fileID: 4300006, guid: 2c96d6870149b7440aad512200591c6a, type: 3}
+--- !u!23 &5528307094501985840
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247538}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &5528307094501985848
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247546}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &5528307094501985850
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247548}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &5528307094501985852
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247550}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &5528307094501985854
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247536}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f0b7e2278fd3c4547b62ce5b97db88b7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &5528307094504247536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410320}
+  - component: {fileID: 5528307094501018878}
+  - component: {fileID: 5528307094501985854}
+  m_Layer: 0
+  m_Name: Text.002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5528307094504247538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410322}
+  - component: {fileID: 5528307094501018864}
+  - component: {fileID: 5528307094501985840}
+  m_Layer: 0
+  m_Name: Text.003
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5528307094504247544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410328}
+  m_Layer: 0
+  m_Name: croix1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5528307094504247546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410330}
+  - component: {fileID: 5528307094501018872}
+  - component: {fileID: 5528307094501985848}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5528307094504247548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410332}
+  - component: {fileID: 5528307094501018874}
+  - component: {fileID: 5528307094501985850}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &5528307094504247550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528307094504410334}
+  - component: {fileID: 5528307094501018876}
+  - component: {fileID: 5528307094501985852}
+  m_Layer: 0
+  m_Name: Text.001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5528307094504410320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247536}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 8.330772, y: 0.39999998, z: -1.058236}
+  m_LocalScale: {x: 300, y: 300, z: 100}
+  m_Children: []
+  m_Father: {fileID: 5528307094504410328}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5528307094504410322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247538}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -6.194811, y: 0.39999998, z: -1.0817525}
+  m_LocalScale: {x: 300, y: 300, z: 100}
+  m_Children: []
+  m_Father: {fileID: 5528307094504410328}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5528307094504410328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247544}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.212501, y: 8.39, z: 10.86}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children:
+  - {fileID: 5528307094504410330}
+  - {fileID: 5528307094504410332}
+  - {fileID: 5528307094504410334}
+  - {fileID: 5528307094504410320}
+  - {fileID: 5528307094504410322}
+  m_Father: {fileID: 4501034588890975617}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!4 &5528307094504410330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247546}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0.19999999, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 20}
+  m_Children: []
+  m_Father: {fileID: 5528307094504410328}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5528307094504410332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247548}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1523015, y: 0.3762616, z: -5.904825}
+  m_LocalScale: {x: 400, y: 400, z: 100}
+  m_Children: []
+  m_Father: {fileID: 5528307094504410328}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5528307094504410334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528307094504247550}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0.9641706, y: 0.3762617, z: 6.017968}
+  m_LocalScale: {x: 400, y: 400, z: 100}
+  m_Children: []
+  m_Father: {fileID: 5528307094504410328}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5716556845837014367
 MeshFilter:
   m_ObjectHideFlags: 2
@@ -17659,6 +18667,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2872817498923826476}
   m_Mesh: {fileID: 0}
+--- !u!23 &6491503495336901256
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491503495338894408}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 38074afed4fef1c478bbecc8c10661b0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &6491503495337900104
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491503495338894408}
+  m_Mesh: {fileID: 4300000, guid: 5a3520d39bf72744fb97fd315e88e3ff, type: 3}
+--- !u!1 &6491503495338894408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6491503495339194472}
+  - component: {fileID: 6491503495337900104}
+  - component: {fileID: 6491503495336901256}
+  m_Layer: 0
+  m_Name: Triangle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6491503495339194472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6491503495338894408}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -1.5089602, y: -0.05965042, z: 1.248498}
+  m_LocalScale: {x: 20, y: 20, z: 10}
+  m_Children: []
+  m_Father: {fileID: 577151148}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7093717619291353358
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18665,19 +19750,20 @@ MonoBehaviour:
       serializationMode: HFUnityEditorSerializationMode
     - name: nbCommands
       serializedType: System.Int32
-      serializedValue: 1
+      serializedValue: 2
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-      serializedValue: "[\r\n  \"True\"\r\n]"
+      serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-      serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
+      serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
+        \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFUnityEditorSerializationMode
     - name: actionParameterList
@@ -18698,6 +19784,21 @@ MonoBehaviour:
         \\\"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7865580273977661001}\\\"\\r\\n}\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"Gaze\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
+        \     }\r\n    }\r\n  ],\r\n  [\r\n    {\r\n      \"Key\": \"action\",\r\n
+        \     \"Value\": {\r\n        \"type\": \"HoloForge.ActionTriggerExtension.Action.AnimatorAction,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \       \"value\": \"{HFUnityEditorSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Action.AnimatorAction,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::SetBool}\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"shared\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"target\",\r\n      \"Value\":
+        {\r\n        \"type\": \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null\",\r\n        \"value\": \"{\\r\\n  \\\"unityGameObject\\\":
+        \\\"{HFUnityEditorSerializationMode::GameObject::0::RELATIVE::7865580273977661001}\\\"\\r\\n}\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"isVirtualButtonPressed\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
@@ -18808,19 +19909,20 @@ MonoBehaviour:
       serializationMode: HFRuntimeSerializationMode
     - name: nbCommands
       serializedType: System.Int32
-      serializedValue: 1
+      serializedValue: 2
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFRuntimeSerializationMode
     - name: actionBoolList
       serializedType: System.Collections.Generic.List`1[[System.Boolean, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-      serializedValue: "[\r\n  \"True\"\r\n]"
+      serializedValue: "[\r\n  \"False\",\r\n  \"True\"\r\n]"
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFRuntimeSerializationMode
     - name: actionTypeList
       serializedType: System.Collections.Generic.List`1[[System.String, mscorlib,
         Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-      serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
+      serializedValue: "[\r\n  \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\",\r\n
+        \ \"HoloForge.ActionTriggerExtension.Action.ActionAnimator\"\r\n]"
       relativeToTransform: {fileID: 7865580273977887337}
       serializationMode: HFRuntimeSerializationMode
     - name: actionParameterList
@@ -18841,6 +19943,21 @@ MonoBehaviour:
         \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"Gaze\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
+        \     }\r\n    }\r\n  ],\r\n  [\r\n    {\r\n      \"Key\": \"action\",\r\n
+        \     \"Value\": {\r\n        \"type\": \"HoloForge.ActionTriggerExtension.Action.AnimatorAction,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\",\r\n
+        \       \"value\": \"{HFRuntimeSerializationMode::ENUM::HoloForge.ActionTriggerExtension.Action.AnimatorAction,
+        HSBaseBehaviours, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::201}\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"shared\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"True\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"target\",\r\n      \"Value\":
+        {\r\n        \"type\": \"Holo.HoloGameObject, HFHoloManager, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null\",\r\n        \"value\": \"{\\r\\n  \\\"unityGameObject\\\":
+        \\\"{HFRuntimeSerializationMode::GameObject::0::CURRENT_GAMEOBJECT::}\\\"\\r\\n}\"\r\n
+        \     }\r\n    },\r\n    {\r\n      \"Key\": \"parameterName\",\r\n      \"Value\":
+        {\r\n        \"type\": \"System.String\",\r\n        \"value\": \"isVirtualButtonPressed\"\r\n
         \     }\r\n    },\r\n    {\r\n      \"Key\": \"boolParameterValue\",\r\n      \"Value\":
         {\r\n        \"type\": \"System.Boolean\",\r\n        \"value\": \"False\"\r\n
         \     }\r\n    }\r\n  ]\r\n]"
@@ -19139,7 +20256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Donn\xE9es t\xE9l\xE9charg\xE9e"
+  m_text: "Donn\xE9es t\xE9l\xE9charg\xE9es"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19205,10 +20322,10 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.0062322826, y: 0.010029075, z: -0.19744177, w: 0}
+  m_margin: {x: -0.019951334, y: 0.010029075, z: -0.19744177, w: 0}
   m_textInfo:
     textComponent: {fileID: 8183052531416412209}
-    characterCount: 19
+    characterCount: 20
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -19234,6 +20351,83 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!4 &8203421696709032810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203421696709191498}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.47896028, y: -0.05965042, z: -2.1115022}
+  m_LocalScale: {x: 20, y: 20, z: 10}
+  m_Children: []
+  m_Father: {fileID: 577151148}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8203421696709191498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8203421696709032810}
+  - component: {fileID: 8203421696710327114}
+  - component: {fileID: 8203421696711457162}
+  m_Layer: 0
+  m_Name: Hexagon1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &8203421696710327114
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203421696709191498}
+  m_Mesh: {fileID: 4300000, guid: 1f75880743c3e7a48829794f73ef1eec, type: 3}
+--- !u!23 &8203421696711457162
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203421696709191498}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ec23a22115849e4468e2f8319b17b3c6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &8621334366153075151
 MeshRenderer:
   m_ObjectHideFlags: 0
